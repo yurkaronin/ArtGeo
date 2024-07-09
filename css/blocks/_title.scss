@@ -3,22 +3,28 @@
   font-style: normal;
   font-family: var(--font-family);
   position: relative;
-  font-weight: 600;
-  font-size: 55px;
-  line-height: 1;
-  color: var(--black-text);
-  & + * {
-    margin-top: 40px;
-  }
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 117%;
+  color: var(--dark);
 
   @media (max-width: 1023px) {
     font-size: 45px;
-    & + * {
-      margin-top: 30px;
-    }
   }
 
   @media (max-width: 767px) {
     font-size: 35px;
   }
+}
+
+.title--big {
+  font-size: 64px;
+}
+
+.title--small {
+  font-size: 24px;
+}
+
+.title--min {
+  font-size: 18px;
 }

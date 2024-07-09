@@ -7,18 +7,21 @@
   }
 
   .button-menu span {
-    // height: 0;
     background-color: transparent;
   }
 
   .button-menu span:after {
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
+
+    width: 16px;
   }
 
   .button-menu span:before {
     -webkit-transform: rotate(-45deg);
     transform: rotate(-45deg);
+
+    width: 16px;
   }
   .header__navigation {
     left: 0;

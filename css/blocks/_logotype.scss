@@ -1,5 +1,8 @@
 .logotype {
-  &__text {
+  display: block;
+  max-width: max-content;
+  svg {
+    width: 136px;
     transition: all 0.3s;
   }
 }

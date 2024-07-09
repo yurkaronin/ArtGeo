@@ -4,27 +4,11 @@
     color: var(--black);
     padding-top: 8px;
     padding-bottom: 8px;
-    border-bottom: 1px solid var(--bg);
-    .logo {
-      color: var(--grey-text);
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2);
+  }
 
-      span {
-        color: var(--grey-text);
-      }
-    }
-    .link {
-      color: inherit;
-    }
+  .header__logo .logotype svg {
+    width: 102px;
   }
-  .header__logo span {
-    color: var(--black);
-  }
-  .logotype__text {
-    fill: var(--black-text);
-  }
-  &.search-show {
-    .search__form {
-      border: 1px solid var(--black-text);
-    }
-  }
+
 }
