@@ -1,0 +1,237 @@
+.button {
+  text-decoration: none;
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: max-content;
+  background-color: transparent;
+  padding: 10px 32px;
+  height: 60px;
+  font-family: var(--font-family);
+  font-style: normal;
+  text-align: center;
+  text-transform: uppercase;
+  border: 1px solid transparent;
+  transition: all 0.3s;
+  border-radius: 0;
+  box-shadow: none;
+  font-weight: 700;
+  font-size: inherit;
+  letter-spacing: 0.14em;
+  color: var(--black-text);
+
+  span {
+    position: relative;
+    z-index: 2;
+  }
+  svg {
+    pointer-events: none;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s ease-in-out, border-color 0.3s ease-in-out,
+      background-color 0.3s ease-in-out;
+    pointer-events: none;
+    z-index: 0;
+    background-color: var(--yellow);
+    transform: scale(1);
+  }
+
+  * {
+    flex-shrink: 0;
+  }
+
+  @media (hover: hover) {
+    &:hover,
+    &:active,
+    &:focus {
+      &::before {
+        transform: scale(1.07);
+      }
+    }
+  }
+
+  @media (max-width: 1023px) {
+    padding: 10px 28px;
+  }
+  @media (max-width: 767px) {
+    padding: 10px 20px;
+  }
+}
+
+.button--secondary {
+  color: var(--black-text);
+  &::before {
+    background-color: transparent;
+    border: 1px solid var(--black-text);
+  }
+}
+
+.button--round {
+  &::before {
+    border-radius: 500px;
+  }
+}
+.button--icon {
+  padding: 6px 10px;
+  padding-right: 30px;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: auto 1fr;
+
+  @media (max-width: 1023px) {
+    padding-right: 28px;
+  }
+  @media (max-width: 767px) {
+    padding-right: 20px;
+  }
+}
+
+.button__round {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: var(--black-text);
+  color: var(--yellow);
+  position: relative;
+  pointer-events: none;
+
+
+}
+
+.button--cube {
+  padding: 10px !important;
+  display: flex;
+  width: 60px;
+  max-width: initial;
+  border: none;
+
+  // .button__icon {
+  //   width: 40px;
+  //   height: 40px;
+  // }
+  // svg {
+  //   width: 15px;
+  //   height: 15px;
+  // }
+}
+
+.button--search {
+  padding: 10px !important;
+  display: flex;
+  width: 45px;
+  height: 45px;
+  max-width: initial;
+  border-radius: 50%;
+  color: var(--black-text);
+
+  &::before {
+    border-radius: 50%;
+  }
+  svg {
+    width: 23px;
+    height: 23px;
+    position: relative;
+  }
+}
+
+.button--center {
+  margin: 0 auto;
+}
+
+.icon {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: var(--black-text);
+  color: var(--yellow);
+  position: relative;
+  pointer-events: none;
+
+  svg {
+    display: block;
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+    position: absolute;
+  }
+}
+
+// .button--menu {
+//   color: var(--white);
+//   width: 40px;
+//   height: 40px;
+//   padding: 0;
+//   max-width: initial;
+//   max-height: initial;
+//   min-height: initial;
+//   outline: 0;
+//   border-radius: 50%;
+//   border: none;
+
+//   & span:not([class]),
+//   & span:not([class])::after,
+//   & span:not([class])::before {
+//     content: "";
+//     display: block;
+//     position: absolute;
+//     width: 16px;
+//     height: 2px;
+//     background-color: var(--white);
+//     z-index: 5;
+//     transition: transform 0.3s;
+//   }
+//   & span:not([class])::before {
+//     transform: translateY(-6px);
+//   }
+//   & span:not([class])::after {
+//     transform: translateY(6px);
+//   }
+
+//   &.isActive span:not([class]) {
+//     height: 0;
+//   }
+//   &.isActive span:not([class]):before {
+//     transform: rotate(-45deg);
+//   }
+//   &.isActive span:not([class]):after {
+//     transform: rotate(45deg);
+//   }
+// }
+
+// .button--play {
+//   padding: 0;
+//   width: 64px;
+//   max-width: initial;
+//   height: 64px;
+//   border-radius: 50%;
+//   color: var(--white);
+
+//   &::before {
+//     background-color: var(--lightgreen);
+//     border-radius: 50%;
+//     border: none;
+//   }
+//   svg {
+//     display: block;
+//     width: 16px;
+//     height: 16px;
+//     position: relative;
+//     z-index: 5;
+//   }
+// }

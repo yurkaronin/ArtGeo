@@ -1,0 +1,22 @@
+// .accordion-menu {
+//   position: relative;
+
+//   &__head {
+//     cursor: pointer;
+//     width: 100%;
+//   }
+//   &__body {
+//     display: none;
+//     width: 100%;
+//   }
+//   &.isOpen &__body {
+//     display: block;
+//   }
+
+//   .mobile-navigation__link svg {
+//     transform: rotate(90deg);
+//   }
+//   &.isOpen .mobile-navigation__link svg {
+//     transform: rotate(-90deg);
+//   }
+// }

@@ -1,0 +1,98 @@
+// base
+@import "./base/root";
+@import "./base/fonts";
+@import "./base/normalize";
+@import "./base/global";
+@import "./base/support";
+
+// blocks
+// @import "./blocks/hero";
+// @import "./blocks/accordion";
+// @import "./blocks/button";
+// @import "./blocks/title";
+// @import "./blocks/wrapper";
+// @import "./blocks/main-nav";
+// @import "./blocks/link";
+// @import "./blocks/search";
+// @import "./blocks/social";
+// @import "./blocks/button-menu";
+// @import "./blocks/logotype";
+// @import "./blocks/item-tag";
+// @import "./blocks/figure";
+// @import "./blocks/preview-card";
+// @import "./blocks/form";
+// @import "./blocks/swiper-button";
+// @import "./blocks/review-card";
+// @import "./blocks/partner-card";
+// @import "./blocks/transform";
+// @import "./blocks/breadcrumbs";
+// @import "./blocks/custom-review";
+// @import "./blocks/photo-slider";
+// @import "./blocks/big-cite";
+// @import "./blocks/articles-list";
+// @import "./blocks/catalog-filter";
+
+// sections
+// @import "./sections/header";
+
+// @import "./sections/section";
+// @import "./sections/inner-top";
+// @import "./sections/hero-home";
+// @import "./sections/items-tags";
+// @import "./sections/previews";
+// @import "./sections/contact-us";
+// @import "./sections/advantages";
+// @import "./sections/reviews";
+// @import "./sections/partners";
+// @import "./sections/decorative-map";
+// @import "./sections/article-full";
+
+// @import "./sections/footer";
+// @import "./sections/modal";
+
+// pages
+// @import "./pages/page";
+
+// activity
+// @import "./activity/header-sticky";
+// @import "./activity/menu-open";
+// @import "./activity/mobile-nav-accordion";
+// @import "./activity/search-show";
+
+// effects
+// @import "./effects/click";
+
+// @media (max-width: 1380px)
+
+// .autoplay-progress {
+//   position: absolute;
+//   z-index: 3;
+//   left: 0;
+//   bottom: 16px;
+//   z-index: 10;
+//   width: 48px;
+//   height: 48px;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   font-weight: bold;
+//   color: var(--swiper-theme-color);
+// }
+
+// .autoplay-progress svg {
+//   --progress: 0;
+//   position: absolute;
+//   left: 0;
+//   top: 0px;
+//   z-index: 10;
+//   width: 100%;
+//   height: 100%;
+//   stroke-width: 4px;
+//   stroke: var(--swiper-theme-color);
+//   fill: none;
+//   stroke-dashoffset: calc(125.6px * (1 - var(--progress)));
+//   stroke-dasharray: 125.6;
+//   transform: rotate(-90deg);
+// }
+
+

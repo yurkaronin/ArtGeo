@@ -1,0 +1,26 @@
+.menu-open {
+  .mobile-navigation {
+    left: 0;
+    visibility: initial;
+    opacity: initial;
+    pointer-events: initial;
+  }
+
+  .button-menu span {
+    // height: 0;
+    background-color: transparent;
+  }
+
+  .button-menu span:after {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+  .button-menu span:before {
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+  .header__navigation {
+    left: 0;
+  }
+}

@@ -1,0 +1,29 @@
+.catalog-filter {
+  margin-right: -30px;
+  ul {
+    display: grid;
+    flex-wrap: wrap;
+  }
+  li {
+    max-width: max-content;
+    margin-right: 30px;
+    margin-bottom: 30px;
+  }
+  a {
+    background: var(--black-text);
+    color: var(--white);
+    border-radius: 15px 30px 30px 0;
+    display: flex;
+    max-width: max-content;
+    height: 33px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 120%;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+  }
+}

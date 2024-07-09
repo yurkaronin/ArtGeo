@@ -1,0 +1,68 @@
+.big-cite {
+  background-color: #f0f0f0;
+  border-radius: 30px 0 0 0;
+  position: relative;
+  padding: 60px 60px 25px;
+  &::before {
+    content: "";
+    display: block;
+    width: 117px;
+    height: 88px;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    background-image: url(../svg/cite-wh.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 0;
+  }
+  &__text {
+    display: block;
+    margin: 0;
+    margin-bottom: 35px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 130%;
+    color: var(--black-text);
+    position: relative;
+    z-index: 2;
+  }
+  &__author {
+    display: block;
+    margin: 0;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 130%;
+    color: var(--grey-text);
+    max-width: max-content;
+    margin-left: auto;
+    position: relative;
+    z-index: 2;
+  }
+}
+
+.big-cite--mod {
+  background-color: #fff;
+  &::before {
+    background-image: url(../svg/cite.svg);
+  }
+
+  .big-cite__text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 130%;
+    color: var(--grey-text);
+  }
+}
+
+.big-cite__photo {
+  max-width: 100%;
+  width: 100%;
+  margin-top: 34px;
+
+  img {
+    display: block;
+    max-width: 100%;
+    width: 100%;
+  }
+}

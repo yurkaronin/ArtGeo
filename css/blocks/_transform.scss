@@ -1,0 +1,7 @@
+.transform {
+  transform: skewY(7deg);
+
+  &__content {
+    transform: skewY(-7deg);
+  }
+}

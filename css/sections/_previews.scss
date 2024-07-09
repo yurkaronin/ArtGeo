@@ -1,0 +1,13 @@
+.previews {
+  overflow: hidden;
+  .figure {
+    top: -170px;
+  }
+  &__list {
+    position: relative;
+    z-index: 2;
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

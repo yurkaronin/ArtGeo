@@ -1,0 +1,55 @@
+.button-menu {
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  // display: none;
+}
+
+.button-menu span,
+.button-menu span::after,
+.button-menu span::before {
+  flex-shrink: 0;
+  position: absolute;
+  width: 30px;
+  height: 3px;
+  border-radius: 4px;
+  background-color: #ffffff;
+}
+
+.button-menu span::after,
+.button-menu span::before {
+  content: "";
+  display: block;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.button-menu span::before {
+  -webkit-transform: translateY(-8px);
+  transform: translateY(-8px);
+}
+
+.button-menu span::after {
+  -webkit-transform: translateY(8px);
+  transform: translateY(8px);
+}
+
+// @media (max-width: 1150px) {
+//   .button-menu {
+//     display: flex;
+//   }
+// }
+
+// @media (max-width: 600px) {
+//   .button-menu span,
+//   .button-menu span::after,
+//   .button-menu span::before {
+//     width: 32px;
+//   }
+// }
