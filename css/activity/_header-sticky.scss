@@ -2,13 +2,17 @@
   .header {
     background-color: var(--white);
     color: var(--black);
-    padding-top: 8px;
-    padding-bottom: 8px;
+    // padding-top: 8px;
+    // padding-bottom: 8px;
     box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2);
   }
 
   .header__logo .logotype svg {
     width: 102px;
+  }
+
+  .main-navigation__link {
+    height: 64px;
   }
 
 }

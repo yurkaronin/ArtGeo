@@ -4,10 +4,10 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   text-align: right;
-  color: var(--dark);
   text-decoration: none;
   transition: all 0.3s;
   position: relative;
+  color: var(--orange);
   &::after {
     content: "";
     display: block;
@@ -17,7 +17,7 @@
     height: 1px;
     background-color: var(--orange);
     position: absolute;
-    bottom: -2px;
+    bottom: 2px;
     left: 0;
   }
 
@@ -34,6 +34,7 @@
 }
 
 .link--mod {
+  color: var(--dark);
   &::after {
     display: none;
   }
