@@ -1,0 +1,19 @@
+.hero {
+  min-height: 100vh;
+  &__text {
+    margin: 0;
+    margin-bottom: initial;
+    font-size: 18px;
+  }
+  &__title {
+    margin-bottom: 27px;
+  }
+
+  &__link {
+
+  }
+
+  // @media (max-width:1023px) {
+  //   min-height: 1024px;
+  // }
+}

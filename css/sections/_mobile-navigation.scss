@@ -1,0 +1,123 @@
+.mobile-navigation {
+  display: none;
+
+
+  @media (max-width: 1023px) {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    right: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: #fff;
+    color: var(--dark);
+    overflow: auto;
+
+
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s;
+
+    &__container {
+      overflow: auto;
+      padding-top: 70px;
+      padding-bottom: 70px;
+      height: 100%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 650px;
+    }
+
+    &__list {
+      display: grid;
+      gap: 32px;
+      grid-template-columns: repeat(1, 1fr);
+    }
+    &__link {
+      display: grid;
+      gap: 32px;
+      grid-template-columns: 1fr auto;
+      align-items: center;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 48px;
+      color: var(--dark);
+      width: 100%;
+      max-width: 100%;
+      transition: all 0.3s;
+      position: relative;
+      z-index: 2;
+      span {
+        position: relative;
+        z-index: 2;
+      }
+      &::before {
+        content: "";
+        display: block;
+        // width: 100%;
+        // height: 100%;
+        transition: all 0.3s;
+        background-color: transparent;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 0;
+      }
+
+      &:hover {
+        color: var(--white);
+        &::before {
+          background-color: var(--darkorange);
+          left: -40px;
+          right: -40px;
+          top: -16px;
+          bottom: -16px;
+        }
+        .mobile-navigation__icon {
+          border: 1px solid transparent;
+        }
+      }
+    }
+    &__icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 88px;
+      height: 88px;
+      border: 1px solid var(--line);
+
+      svg {
+        flex-shrink: 0;
+        // transition: all 0.3s;
+      }
+    }
+  }
+
+  @media (max-width: 767px) {
+    &__link {
+      gap: 16px;
+      font-size: 25px;
+
+      &:hover {
+        &::before {
+          left: -20px;
+          right: -20px;
+          top: -16px;
+          bottom: -16px;
+        }
+
+      }
+    }
+    &__icon {
+      width: 40px;
+      height: 40px;
+
+    }
+  }
+}

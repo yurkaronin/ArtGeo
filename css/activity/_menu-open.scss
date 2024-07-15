@@ -1,4 +1,5 @@
 .menu-open {
+  overflow: hidden;
   .mobile-navigation {
     left: 0;
     visibility: initial;
@@ -23,7 +24,12 @@
 
     width: 16px;
   }
-  .header__navigation {
-    left: 0;
+
+  .header {
+    box-shadow: none !important;
+    background-color: #fff;
+  }
+  .header:after {
+    opacity: 0.15;
   }
 }

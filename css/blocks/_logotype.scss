@@ -1,8 +1,21 @@
 .logotype {
   display: block;
   max-width: max-content;
+  transition: all 0.3s;
   svg {
     width: 136px;
-    transition: all 0.3s;
+    transition: all 0.6s;
+  }
+
+  &:hover {
+    svg {
+      scale: 1.05;
+    }
+  }
+
+  @media (max-width: 767px) {
+    svg {
+      width: 84px !important;
+    }
   }
 }
