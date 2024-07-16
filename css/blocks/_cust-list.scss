@@ -1,0 +1,22 @@
+.cust-list {
+  list-style: none;
+  padding: 0;
+  line-height: 2;
+  // margin: 0;
+
+  li {
+    position: relative;
+    padding-left: calc(8px + 8px);
+
+    &::after {
+      content: "";
+      display: block;
+      width: 8px;
+      height: 2px;
+      background-color: var(--orange);
+      position: absolute;
+      top: 15px;
+      left: 0;
+    }
+  }
+}

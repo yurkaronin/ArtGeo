@@ -23,6 +23,11 @@
 @import "./blocks/swiper-button-group";
 @import "./blocks/swiper-pagination";
 @import "./blocks/swiper-navigation-group";
+@import "./blocks/card-grid";
+@import "./blocks/announce-card";
+@import "./blocks/cust-list";
+@import "./blocks/text";
+@import "./blocks/advantages";
 
 // sections
 @import "./sections/header";
@@ -32,6 +37,7 @@
 
 @import "./sections/hero";
 @import "./sections/gallery";
+@import "./sections/overview";
 
 @import "./sections/footer";
 @import "./sections/modal";

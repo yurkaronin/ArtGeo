@@ -1,0 +1,13 @@
+.overview {
+  &__grid {
+    display: grid;
+    gap: 47px 160px;
+    grid-template-columns: 9fr 3fr;
+  }
+
+  @media (max-width: 1380px) {
+    &__grid {
+      grid-template-columns: 1fr;
+    }
+  }
+}

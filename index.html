@@ -223,23 +223,23 @@
             <div class="gallery__header-column">
 
               <div class="swiper-navigation-group">
-              <div class="swiper-pagination position-reset"></div>
+                <div class="swiper-pagination position-reset"></div>
 
-              <div class="swiper-button-group">
-                <div class="swiper-button position-reset swiper-button-prev">
-                  <svg width="15" height="26" viewBox="0 0 15 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M14 1L2 13L14 25" stroke="#F05000" stroke-width="2"/>
+                <div class="swiper-button-group">
+                  <div class="swiper-button position-reset swiper-button-prev">
+                    <svg width="15" height="26" viewBox="0 0 15 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M14 1L2 13L14 25" stroke="#F05000" stroke-width="2" />
                     </svg>
 
-                </div>
-                <div class="swiper-button position-reset swiper-button-next">
-                  <svg width="15" height="26" viewBox="0 0 15 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M1 1L13 13L1 25" stroke="#F05000" stroke-width="2"/>
+                  </div>
+                  <div class="swiper-button position-reset swiper-button-next">
+                    <svg width="15" height="26" viewBox="0 0 15 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1 1L13 13L1 25" stroke="#F05000" stroke-width="2" />
                     </svg>
 
+                  </div>
                 </div>
               </div>
-            </div>
 
             </div>
           </div>
@@ -297,35 +297,36 @@
     <section class="overview section">
       <div class="wrapper">
 
-        <div class="section__grid section__grid-one">
+        <div class="overview__grid">
 
-          <div class="section__grid-one-item">
-            <div class="overview__main">
-              <span class="label">Обзор оборудования</span>
-              <h2 class="title">Серия LiGrip – универсальные лазерные 3D-сканеры</h2>
-              <p>LiGrip – новая серия мобильных лазерных 3D-сканеров компании GreenValley International. Благодаря
-                небольшому размеру и малому весу они идеально подходят для выполнения съемок в самых разных условиях.
-                Сочетание высокопроизводительного измерительного модуля Hesai с полнокруговой фотокамерой и
-                интеллектуальным алгоритмом SLAM дает возможность получить детальную и полную информацию об объекте
-                съемки в требуемой системе координат с минимальными усилиями и в максимально короткие сроки.</p>
+          <div class="overview__column overview__column--left">
+            <span class="label">Обзор оборудования</span>
+            <h2 class="title">Серия LiGrip – универсальные лазерные 3D-сканеры</h2>
+            <p class="text">LiGrip – новая серия мобильных лазерных 3D-сканеров компании GreenValley International. Благодаря
+              небольшому размеру и малому весу они идеально подходят для выполнения съемок в самых разных условиях.
+              Сочетание высокопроизводительного измерительного модуля Hesai с полнокруговой фотокамерой и
+              интеллектуальным алгоритмом SLAM дает возможность получить детальную и полную информацию об объекте
+              съемки в требуемой системе координат с минимальными усилиями и в максимально короткие сроки.</p>
 
-              <div class="card-grid">
-                <div class="card-grid__item">
-                  <article class="announce-card">
-                    <div class="announce-card__image">
-                      <img src="./img/announce-card/1.png" alt="LiGrip H120">
-                    </div>
-                    <div class="announce-card__details">
-                      <h3 class="announce-card__title">LiGrip H120</h3>
-                      <ul class="announce-card__specs">
-                        <li class="announce-card__spec">Скорость сканирования: 320 000 точек/сек.</li>
-                        <li class="announce-card__spec">Диапазон сканирования: до 120 метров</li>
-                        <li class="announce-card__spec">Разрешение фото: 6080×3040</li>
-                        <li class="announce-card__spec">Относительная точность: ≤3 см</li>
-                        <li class="announce-card__spec">Объем памяти: 256 ГБ</li>
-                      </ul>
-                      <div class="announce-card__actions">
-                        <a class="announce-card__order-button button" href="#">
+            <ul class="card-grid list-reset">
+
+              <li class="card-grid__column">
+                <article class="announce-card">
+                  <div class="announce-card__image">
+                    <img src="./img/announce-card/1.png" alt="LiGrip H120">
+                  </div>
+                  <div class="announce-card__details">
+                    <h3 class="announce-card__title">LiGrip H120</h3>
+                    <ul class="announce-card__specs cust-list">
+                      <li class="announce-card__spec">Скорость сканирования: 320 000 точек/сек.</li>
+                      <li class="announce-card__spec">Диапазон сканирования: до 120 метров</li>
+                      <li class="announce-card__spec">Разрешение фото: 6080×3040</li>
+                      <li class="announce-card__spec">Относительная точность: ≤3 см</li>
+                      <li class="announce-card__spec">Объем памяти: 256 ГБ</li>
+                    </ul>
+                    <div class="announce-card__actions buttons-grid">
+                      <a class="button button--icon" href="#">
+                        <span class="button__icon">
                           <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -336,9 +337,11 @@
                             <path d="M8.99975 4.64893L8.99974 13.3511" stroke="white" stroke-width="2"
                               stroke-miterlimit="10" stroke-linejoin="round" />
                           </svg>
-                          <span>Заказать сканер</span></a>
-                        <a class="announce-card__details-button button button--mod" href="#">
+                        </span>
 
+                        <span>Заказать сканер</span></a>
+                      <a class="button button--icon button--mod" href="#">
+                        <span class="button__icon">
                           <svg width="17" height="18" viewBox="0 0 17 18" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <path d="M3 5H9" stroke="#F05000" stroke-width="2" />
@@ -352,224 +355,225 @@
                               stroke="#F05000" stroke-width="2" stroke-miterlimit="10" />
                             <path d="M16 5H12V1" stroke="#F05000" stroke-width="2" stroke-miterlimit="10" />
                           </svg>
+                        </span>
 
-                          <span>Все характеристики</span></a>
-                      </div>
+                        <span>Все характеристики</span></a>
                     </div>
-                  </article>
+                  </div>
+                </article>
 
-                </div>
-                <div class="card-grid__item">
-                  <article class="announce-card">
-                    <div class="announce-card__image">
-                      <img src="./img/announce-card/2.png" alt="LiGrip H120">
+              </li>
+              <li class="card-grid__column">
+                <article class="announce-card">
+                  <div class="announce-card__image">
+                    <img src="./img/announce-card/2.png" alt="LiGrip H120">
+                  </div>
+                  <div class="announce-card__details">
+                    <h3 class="announce-card__title">LiGrip H300</h3>
+                    <ul class="announce-card__specs cust-list">
+                      <li class="announce-card__spec">Скорость сканирования: 640 000 точек/сек.</li>
+                      <li class="announce-card__spec">Диапазон сканирования: до 300 метров</li>
+                      <li class="announce-card__spec">Разрешение фото: 6528*3264</li>
+                      <li class="announce-card__spec">Относительная точность: ≤1 см</li>
+                      <li class="announce-card__spec">Объем памяти: 512 ГБ</li>
+
+                    </ul>
+                    <div class="announce-card__actions buttons-grid">
+                      <a class="button button--icon" href="#">
+                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M17 9C17 4.58172 13.4183 1 9 1C4.58172 1 0.999999 4.58172 1 9C1 13.4183 4.58172 17 9 17C13.4183 17 17 13.4183 17 9Z"
+                            stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round" />
+                          <path d="M4.64868 9L13.3508 8.99999" stroke="white" stroke-width="2" stroke-miterlimit="10"
+                            stroke-linejoin="round" />
+                          <path d="M8.99975 4.64893L8.99974 13.3511" stroke="white" stroke-width="2"
+                            stroke-miterlimit="10" stroke-linejoin="round" />
+                        </svg>
+                        <span>Заказать сканер</span></a>
+                      <a class="button button--icon button--mod" href="#">
+
+                        <svg width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M3 5H9" stroke="#F05000" stroke-width="2" />
+                          <path d="M3 9H9" stroke="#F05000" stroke-width="2" />
+                          <path d="M3 13H9" stroke="#F05000" stroke-width="2" />
+                          <path d="M0 5H2" stroke="#F05000" stroke-width="2" />
+                          <path d="M0 9H2" stroke="#F05000" stroke-width="2" />
+                          <path d="M0 13H2" stroke="#F05000" stroke-width="2" />
+                          <path
+                            d="M4 2.95238V1.7619C4 1.34133 4.336 1 4.75 1H13L16 4.04762V16.2381C16 16.6587 15.664 17 15.25 17H4.75C4.336 17 4 16.6587 4 16.2381V15"
+                            stroke="#F05000" stroke-width="2" stroke-miterlimit="10" />
+                          <path d="M16 5H12V1" stroke="#F05000" stroke-width="2" stroke-miterlimit="10" />
+                        </svg>
+
+                        <span>Все характеристики</span></a>
                     </div>
-                    <div class="announce-card__details">
-                      <h3 class="announce-card__title">LiGrip H300</h3>
-                      <ul class="announce-card__specs">
-                        <li class="announce-card__spec">Скорость сканирования: 640 000 точек/сек.</li>
-                        <li class="announce-card__spec">Диапазон сканирования: до 300 метров</li>
-                        <li class="announce-card__spec">Разрешение фото: 6528*3264</li>
-                        <li class="announce-card__spec">Относительная точность: ≤1 см</li>
-                        <li class="announce-card__spec">Объем памяти: 512 ГБ</li>
-
-                      </ul>
-                      <div class="announce-card__actions">
-                        <a class="announce-card__order-button button" href="#">
-                          <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path
-                              d="M17 9C17 4.58172 13.4183 1 9 1C4.58172 1 0.999999 4.58172 1 9C1 13.4183 4.58172 17 9 17C13.4183 17 17 13.4183 17 9Z"
-                              stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round" />
-                            <path d="M4.64868 9L13.3508 8.99999" stroke="white" stroke-width="2" stroke-miterlimit="10"
-                              stroke-linejoin="round" />
-                            <path d="M8.99975 4.64893L8.99974 13.3511" stroke="white" stroke-width="2"
-                              stroke-miterlimit="10" stroke-linejoin="round" />
-                          </svg>
-                          <span>Заказать сканер</span></a>
-                        <a class="announce-card__details-button button button--mod" href="#">
-
-                          <svg width="17" height="18" viewBox="0 0 17 18" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path d="M3 5H9" stroke="#F05000" stroke-width="2" />
-                            <path d="M3 9H9" stroke="#F05000" stroke-width="2" />
-                            <path d="M3 13H9" stroke="#F05000" stroke-width="2" />
-                            <path d="M0 5H2" stroke="#F05000" stroke-width="2" />
-                            <path d="M0 9H2" stroke="#F05000" stroke-width="2" />
-                            <path d="M0 13H2" stroke="#F05000" stroke-width="2" />
-                            <path
-                              d="M4 2.95238V1.7619C4 1.34133 4.336 1 4.75 1H13L16 4.04762V16.2381C16 16.6587 15.664 17 15.25 17H4.75C4.336 17 4 16.6587 4 16.2381V15"
-                              stroke="#F05000" stroke-width="2" stroke-miterlimit="10" />
-                            <path d="M16 5H12V1" stroke="#F05000" stroke-width="2" stroke-miterlimit="10" />
-                          </svg>
-
-                          <span>Все характеристики</span></a>
-                      </div>
-                    </div>
-                  </article>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="section__grid-one-item">
-            <ul class="advantages">
-              <li class="advantages__item">
-                <span class="advantages__icon">
-                  <svg width="36" height="45" viewBox="0 0 36 45" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M18 43.987C18.944 43.705 35 36.25 35 29C35 21.484 35 16.733 35 8C30.278 8 19.662 3.623 18.009 1H17.99M18 43.987C17.056 43.705 1 36.25 1 29C1 21.484 1 16.733 1 8C5.722 8 16.338 3.623 17.99 1M18 43.987L17.99 1"
-                      stroke="#F05000" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"
-                      stroke-linejoin="round" />
-                  </svg>
-
-                </span>
-                <div class="advantages__content">
-                  <b class="advantages__title">Надежный</b>
-                  <p class="advantages__description">
-                    Корпус измерительного модуля выполнен из легкосплавного металла, что дает дополнительную защиту при
-                    эксплуатации в неблагоприятных условиях, в том числе и на промышленных предприятиях.
-                  </p>
-                </div>
-              </li>
-              <li class="advantages__item">
-                <span class="advantages__icon">
-                  <svg width="44" height="45" viewBox="0 0 44 45" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M24 19C24.529 24.935 26.138 35.387 29 41C29.235 41.462 28.991 42.065 28.62 42.334C27.17 43.383 25.202 44 23 44H21C18.798 44 16.83 43.383 15.38 42.334C15.009 42.065 14.765 41.462 15 41C17.862 35.387 19.47 24.935 20 19"
-                      stroke="#F05000" stroke-width="2" stroke-miterlimit="10" />
-                    <path d="M12 22.022C7.118 17.14 7.118 9.22499 12 4.34399" stroke="#F05000" stroke-width="2"
-                      stroke-miterlimit="10" />
-                    <path d="M6.112 25.684C-0.704 18.868 -0.704 7.817 6.112 1" stroke="#F05000" stroke-width="2"
-                      stroke-miterlimit="10" />
-                    <path d="M32 22.022C36.882 17.14 36.882 9.22499 32 4.34399" stroke="#F05000" stroke-width="2"
-                      stroke-miterlimit="10" />
-                    <path d="M37.8879 25.684C44.7039 18.868 44.7039 7.817 37.8879 1" stroke="#F05000" stroke-width="2"
-                      stroke-miterlimit="10" />
-                    <path
-                      d="M21.999 19C25.3127 19 27.999 16.3137 27.999 13C27.999 9.68629 25.3127 7 21.999 7C18.6853 7 15.999 9.68629 15.999 13C15.999 16.3137 18.6853 19 21.999 19Z"
-                      stroke="#F05000" stroke-width="2" stroke-miterlimit="10" />
-                  </svg>
-
-                </span>
-                <div class="advantages__content">
-                  <b class="advantages__title">Дальнобойный</b>
-                  <p class="advantages__description">
-                    Расширенный диапазон измеряемых расстояний обеспечивает надежное определение труднодоступных или
-                    опасных объектов на расстояниях до 300 метров при работе со сканером LiGrip H300.
-                  </p>
-                </div>
-              </li>
-              <li class="advantages__item">
-                <span class="advantages__icon">
-                  <svg width="48" height="44" viewBox="0 0 48 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M44 24.8569V20.8569H40" stroke="#F05000" stroke-width="2" stroke-miterlimit="10"
-                      stroke-linecap="round" stroke-linejoin="round" />
-                    <path d="M26 34.8569L28 36.8569L44 20.8569" stroke="#F05000" stroke-width="2" stroke-miterlimit="10"
-                      stroke-linecap="round" stroke-linejoin="round" />
-                    <path d="M14 22.8569L21 29.8569" stroke="#F05000" stroke-width="2" stroke-miterlimit="10"
-                      stroke-linecap="round" stroke-linejoin="round" />
-                    <path d="M35 24.8569V20.8569H31" stroke="#F05000" stroke-width="2" stroke-miterlimit="10"
-                      stroke-linecap="round" stroke-linejoin="round" />
-                    <path d="M5 22.8569L19 36.8569L35 20.8569" stroke="#F05000" stroke-width="2" stroke-miterlimit="10"
-                      stroke-linecap="round" stroke-linejoin="round" />
-                    <path d="M39 31.8569H43L47 42.8569H1L5 31.8569H9" stroke="#F05000" stroke-width="2"
-                      stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                    <path
-                      d="M23 1C22.135 5.322 17 8.80099 17 13.77C17 17.132 19.686 19.857 23 19.857C26.313 19.857 29 17.132 29 13.77C29 8.80099 23.865 5.322 23 1Z"
-                      stroke="#F05000" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round" />
-                  </svg>
-
-                </span>
-                <div class="advantages__content">
-                  <b class="advantages__title">Защищенный</b>
-                  <p class="advantages__description">
-                    Благодаря высокой степени защищенности IP54 сканеры LiGrip работают даже под дождем и в запыленных
-                    помещениях.
-                  </p>
-                </div>
-              </li>
-              <li class="advantages__item">
-                <span class="advantages__icon">
-                  <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M13.2311 37.5217C17.5908 37.5147 23.6141 37.5451 27.9833 37.5382" stroke="#F05000"
-                      stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round" />
-                    <path
-                      d="M35.7933 37.5217H41C41 37.5217 41 33.7765 41 32.3043C41 30.2721 38.6136 27.3043 30.5866 27.0869C27.2162 23.8826 24.1876 21.8695 20.9031 21.8695C17.6186 21.8695 15.7407 21.8695 14.0988 21.8695C10.4828 21.8695 8.40707 24.4782 4.71554 27.0869C3.0737 27.0869 2.98693 27.0869 1.94993 27.0869C1.08562 29.3382 0.757597 33.1243 1.18975 34.8573C1.6219 36.5886 2.73874 37.5217 4.55327 37.5217C4.6791 37.5217 5.03749 37.5217 5.42105 37.5217"
-                      stroke="#F05000" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round" />
-                    <path d="M27.9834 28.1331L26.2478 28.8261H12.3633L9.76001 26.2174" stroke="#F05000" stroke-width="2"
-                      stroke-miterlimit="10" stroke-linejoin="round" />
-                    <path
-                      d="M31.8884 41C34.0451 41 35.7934 39.2481 35.7934 37.087C35.7934 34.9259 34.0451 33.174 31.8884 33.174C29.7317 33.174 27.9834 34.9259 27.9834 37.087C27.9834 39.2481 29.7317 41 31.8884 41Z"
-                      stroke="#F05000" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round" />
-                    <path
-                      d="M9.32603 41C11.4827 41 13.231 39.2481 13.231 37.087C13.231 34.9259 11.4827 33.174 9.32603 33.174C7.16935 33.174 5.42102 34.9259 5.42102 37.087C5.42102 39.2481 7.16935 41 9.32603 41Z"
-                      stroke="#F05000" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round" />
-                    <path d="M21.0411 19.2608V14.0435" stroke="#F05000" stroke-width="2" stroke-miterlimit="10"
-                      stroke-linejoin="round" />
-                    <path d="M24.5123 4.47826L21.0412 1L17.5701 4.47826" stroke="#F05000" stroke-width="2"
-                      stroke-miterlimit="10" stroke-linejoin="round" />
-                    <path d="M28.8512 10.5652H24.5123V14.0434" stroke="#F05000" stroke-width="2" stroke-miterlimit="10"
-                      stroke-linejoin="round" />
-                    <path d="M13.2311 10.5652H17.57V14.0434" stroke="#F05000" stroke-width="2" stroke-miterlimit="10"
-                      stroke-linejoin="round" />
-                    <path d="M31.4546 14.0434L34.9257 10.5652L31.4546 7.08691" stroke="#F05000" stroke-width="2"
-                      stroke-miterlimit="10" stroke-linejoin="round" />
-                    <path d="M10.6277 14.0434L7.15662 10.5652L10.6277 7.08691" stroke="#F05000" stroke-width="2"
-                      stroke-miterlimit="10" stroke-linejoin="round" />
-                    <path d="M21.0411 1.86951V12.3043" stroke="#F05000" stroke-width="2" stroke-miterlimit="10"
-                      stroke-linejoin="round" />
-                    <path d="M8.02454 10.5652H11.4957" stroke="#F05000" stroke-width="2" stroke-miterlimit="10"
-                      stroke-linejoin="round" />
-                    <path d="M34.0578 10.5652H30.5867" stroke="#F05000" stroke-width="2" stroke-miterlimit="10"
-                      stroke-linejoin="round" />
-                    <path d="M17.5701 15.7826V18.3913" stroke="#F05000" stroke-width="2" stroke-miterlimit="10"
-                      stroke-linejoin="round" />
-                    <path d="M24.5123 15.7826V18.3913" stroke="#F05000" stroke-width="2" stroke-miterlimit="10"
-                      stroke-linejoin="round" />
-                  </svg>
-
-                </span>
-                <div class="advantages__content">
-                  <b class="advantages__title">Многофункциональный</b>
-                  <p class="advantages__description">
-                    С помощью предлагаемых аксессуаров сканер LiGrip можно закрепить на БПЛА, затем быстро снять и
-                    установить на автомобиль поместить на рюкзак или же просто выполнить съемку с руки.
-                  </p>
-                </div>
-              </li>
-              <li class="advantages__item">
-                <span class="advantages__icon">
-                  <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M41 1H1V41H41V1Z" stroke="#F05000" stroke-width="2" stroke-miterlimit="10"
-                      stroke-linejoin="round" />
-                    <path d="M4 8.53845H40.3636" stroke="#F05000" stroke-width="2" stroke-miterlimit="10"
-                      stroke-linejoin="round" />
-                    <path d="M4 4.76929H5.81818" stroke="#F05000" stroke-width="2" stroke-miterlimit="10"
-                      stroke-linejoin="round" />
-                    <path d="M6.72729 4.76929H8.54548" stroke="#F05000" stroke-width="2" stroke-miterlimit="10"
-                      stroke-linejoin="round" />
-                    <path d="M9.45447 4.76929H11.2726" stroke="#F05000" stroke-width="2" stroke-miterlimit="10"
-                      stroke-linejoin="round" />
-                    <path d="M15.5455 28.8461L10.0909 24.2307L15.5455 19.6154" stroke="#F05000" stroke-width="2"
-                      stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                    <path d="M26.4546 28.8461L31.9091 24.2307L26.4546 19.6154" stroke="#F05000" stroke-width="2"
-                      stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                    <path d="M23.7273 16.8462L18.2727 31.6154" stroke="#F05000" stroke-width="2" stroke-miterlimit="10"
-                      stroke-linecap="round" stroke-linejoin="round" />
-                  </svg>
-
-                </span>
-                <div class="advantages__content">
-                  <b class="advantages__title">Универсальный</b>
-                  <p class="advantages__description">
-                    Независимо от того, где производится съемка: на улице или в помещении (в том числе и в шахте),
-                    LiGrip предоставляет надежные и точные результаты, благодаря различным сценариям обработки
-                    полученных данных: SLAM, PPK+SLAM.
-                  </p>
-                </div>
+                  </div>
+                </article>
               </li>
             </ul>
+          </div>
+
+          <div class="overview__column overview__column--right">
+            <div class="advantages">
+              <ul class="advantages__list list-reset">
+                <li class="advantages__item">
+                  <span class="advantages__icon">
+                    <svg width="36" height="45" viewBox="0 0 36 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M18 43.987C18.944 43.705 35 36.25 35 29C35 21.484 35 16.733 35 8C30.278 8 19.662 3.623 18.009 1H17.99M18 43.987C17.056 43.705 1 36.25 1 29C1 21.484 1 16.733 1 8C5.722 8 16.338 3.623 17.99 1M18 43.987L17.99 1"
+                        stroke="#F05000" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    </svg>
+
+                  </span>
+                  <div class="advantages__content">
+                    <b class="advantages__title">Надежный</b>
+                    <p class="advantages__description">
+                      Корпус измерительного модуля выполнен из легкосплавного металла, что дает дополнительную защиту
+                      при
+                      эксплуатации в неблагоприятных условиях, в том числе и на промышленных предприятиях.
+                    </p>
+                  </div>
+                </li>
+                <li class="advantages__item">
+                  <span class="advantages__icon">
+                    <svg width="44" height="45" viewBox="0 0 44 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M24 19C24.529 24.935 26.138 35.387 29 41C29.235 41.462 28.991 42.065 28.62 42.334C27.17 43.383 25.202 44 23 44H21C18.798 44 16.83 43.383 15.38 42.334C15.009 42.065 14.765 41.462 15 41C17.862 35.387 19.47 24.935 20 19"
+                        stroke="#F05000" stroke-width="2" stroke-miterlimit="10" />
+                      <path d="M12 22.022C7.118 17.14 7.118 9.22499 12 4.34399" stroke="#F05000" stroke-width="2"
+                        stroke-miterlimit="10" />
+                      <path d="M6.112 25.684C-0.704 18.868 -0.704 7.817 6.112 1" stroke="#F05000" stroke-width="2"
+                        stroke-miterlimit="10" />
+                      <path d="M32 22.022C36.882 17.14 36.882 9.22499 32 4.34399" stroke="#F05000" stroke-width="2"
+                        stroke-miterlimit="10" />
+                      <path d="M37.8879 25.684C44.7039 18.868 44.7039 7.817 37.8879 1" stroke="#F05000" stroke-width="2"
+                        stroke-miterlimit="10" />
+                      <path
+                        d="M21.999 19C25.3127 19 27.999 16.3137 27.999 13C27.999 9.68629 25.3127 7 21.999 7C18.6853 7 15.999 9.68629 15.999 13C15.999 16.3137 18.6853 19 21.999 19Z"
+                        stroke="#F05000" stroke-width="2" stroke-miterlimit="10" />
+                    </svg>
+
+                  </span>
+                  <div class="advantages__content">
+                    <b class="advantages__title">Дальнобойный</b>
+                    <p class="advantages__description">
+                      Расширенный диапазон измеряемых расстояний обеспечивает надежное определение труднодоступных или
+                      опасных объектов на расстояниях до 300 метров при работе со сканером LiGrip H300.
+                    </p>
+                  </div>
+                </li>
+                <li class="advantages__item">
+                  <span class="advantages__icon">
+                    <svg width="48" height="44" viewBox="0 0 48 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M44 24.8569V20.8569H40" stroke="#F05000" stroke-width="2" stroke-miterlimit="10"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                      <path d="M26 34.8569L28 36.8569L44 20.8569" stroke="#F05000" stroke-width="2"
+                        stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                      <path d="M14 22.8569L21 29.8569" stroke="#F05000" stroke-width="2" stroke-miterlimit="10"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                      <path d="M35 24.8569V20.8569H31" stroke="#F05000" stroke-width="2" stroke-miterlimit="10"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                      <path d="M5 22.8569L19 36.8569L35 20.8569" stroke="#F05000" stroke-width="2"
+                        stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                      <path d="M39 31.8569H43L47 42.8569H1L5 31.8569H9" stroke="#F05000" stroke-width="2"
+                        stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                      <path
+                        d="M23 1C22.135 5.322 17 8.80099 17 13.77C17 17.132 19.686 19.857 23 19.857C26.313 19.857 29 17.132 29 13.77C29 8.80099 23.865 5.322 23 1Z"
+                        stroke="#F05000" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round" />
+                    </svg>
+
+                  </span>
+                  <div class="advantages__content">
+                    <b class="advantages__title">Защищенный</b>
+                    <p class="advantages__description">
+                      Благодаря высокой степени защищенности IP54 сканеры LiGrip работают даже под дождем и в запыленных
+                      помещениях.
+                    </p>
+                  </div>
+                </li>
+                <li class="advantages__item">
+                  <span class="advantages__icon">
+                    <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M13.2311 37.5217C17.5908 37.5147 23.6141 37.5451 27.9833 37.5382" stroke="#F05000"
+                        stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round" />
+                      <path
+                        d="M35.7933 37.5217H41C41 37.5217 41 33.7765 41 32.3043C41 30.2721 38.6136 27.3043 30.5866 27.0869C27.2162 23.8826 24.1876 21.8695 20.9031 21.8695C17.6186 21.8695 15.7407 21.8695 14.0988 21.8695C10.4828 21.8695 8.40707 24.4782 4.71554 27.0869C3.0737 27.0869 2.98693 27.0869 1.94993 27.0869C1.08562 29.3382 0.757597 33.1243 1.18975 34.8573C1.6219 36.5886 2.73874 37.5217 4.55327 37.5217C4.6791 37.5217 5.03749 37.5217 5.42105 37.5217"
+                        stroke="#F05000" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round" />
+                      <path d="M27.9834 28.1331L26.2478 28.8261H12.3633L9.76001 26.2174" stroke="#F05000"
+                        stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round" />
+                      <path
+                        d="M31.8884 41C34.0451 41 35.7934 39.2481 35.7934 37.087C35.7934 34.9259 34.0451 33.174 31.8884 33.174C29.7317 33.174 27.9834 34.9259 27.9834 37.087C27.9834 39.2481 29.7317 41 31.8884 41Z"
+                        stroke="#F05000" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round" />
+                      <path
+                        d="M9.32603 41C11.4827 41 13.231 39.2481 13.231 37.087C13.231 34.9259 11.4827 33.174 9.32603 33.174C7.16935 33.174 5.42102 34.9259 5.42102 37.087C5.42102 39.2481 7.16935 41 9.32603 41Z"
+                        stroke="#F05000" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round" />
+                      <path d="M21.0411 19.2608V14.0435" stroke="#F05000" stroke-width="2" stroke-miterlimit="10"
+                        stroke-linejoin="round" />
+                      <path d="M24.5123 4.47826L21.0412 1L17.5701 4.47826" stroke="#F05000" stroke-width="2"
+                        stroke-miterlimit="10" stroke-linejoin="round" />
+                      <path d="M28.8512 10.5652H24.5123V14.0434" stroke="#F05000" stroke-width="2"
+                        stroke-miterlimit="10" stroke-linejoin="round" />
+                      <path d="M13.2311 10.5652H17.57V14.0434" stroke="#F05000" stroke-width="2" stroke-miterlimit="10"
+                        stroke-linejoin="round" />
+                      <path d="M31.4546 14.0434L34.9257 10.5652L31.4546 7.08691" stroke="#F05000" stroke-width="2"
+                        stroke-miterlimit="10" stroke-linejoin="round" />
+                      <path d="M10.6277 14.0434L7.15662 10.5652L10.6277 7.08691" stroke="#F05000" stroke-width="2"
+                        stroke-miterlimit="10" stroke-linejoin="round" />
+                      <path d="M21.0411 1.86951V12.3043" stroke="#F05000" stroke-width="2" stroke-miterlimit="10"
+                        stroke-linejoin="round" />
+                      <path d="M8.02454 10.5652H11.4957" stroke="#F05000" stroke-width="2" stroke-miterlimit="10"
+                        stroke-linejoin="round" />
+                      <path d="M34.0578 10.5652H30.5867" stroke="#F05000" stroke-width="2" stroke-miterlimit="10"
+                        stroke-linejoin="round" />
+                      <path d="M17.5701 15.7826V18.3913" stroke="#F05000" stroke-width="2" stroke-miterlimit="10"
+                        stroke-linejoin="round" />
+                      <path d="M24.5123 15.7826V18.3913" stroke="#F05000" stroke-width="2" stroke-miterlimit="10"
+                        stroke-linejoin="round" />
+                    </svg>
+
+                  </span>
+                  <div class="advantages__content">
+                    <b class="advantages__title">Многофункциональный</b>
+                    <p class="advantages__description">
+                      С помощью предлагаемых аксессуаров сканер LiGrip можно закрепить на БПЛА, затем быстро снять и
+                      установить на автомобиль поместить на рюкзак или же просто выполнить съемку с руки.
+                    </p>
+                  </div>
+                </li>
+                <li class="advantages__item">
+                  <span class="advantages__icon">
+                    <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M41 1H1V41H41V1Z" stroke="#F05000" stroke-width="2" stroke-miterlimit="10"
+                        stroke-linejoin="round" />
+                      <path d="M4 8.53845H40.3636" stroke="#F05000" stroke-width="2" stroke-miterlimit="10"
+                        stroke-linejoin="round" />
+                      <path d="M4 4.76929H5.81818" stroke="#F05000" stroke-width="2" stroke-miterlimit="10"
+                        stroke-linejoin="round" />
+                      <path d="M6.72729 4.76929H8.54548" stroke="#F05000" stroke-width="2" stroke-miterlimit="10"
+                        stroke-linejoin="round" />
+                      <path d="M9.45447 4.76929H11.2726" stroke="#F05000" stroke-width="2" stroke-miterlimit="10"
+                        stroke-linejoin="round" />
+                      <path d="M15.5455 28.8461L10.0909 24.2307L15.5455 19.6154" stroke="#F05000" stroke-width="2"
+                        stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                      <path d="M26.4546 28.8461L31.9091 24.2307L26.4546 19.6154" stroke="#F05000" stroke-width="2"
+                        stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                      <path d="M23.7273 16.8462L18.2727 31.6154" stroke="#F05000" stroke-width="2"
+                        stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+
+                  </span>
+                  <div class="advantages__content">
+                    <b class="advantages__title">Универсальный</b>
+                    <p class="advantages__description">
+                      Независимо от того, где производится съемка: на улице или в помещении (в том числе и в шахте),
+                      LiGrip предоставляет надежные и точные результаты, благодаря различным сценариям обработки
+                      полученных данных: SLAM, PPK+SLAM.
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
 
           </div>
         </div>
