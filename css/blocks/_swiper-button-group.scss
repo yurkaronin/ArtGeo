@@ -1,0 +1,11 @@
+.swiper-button-group {
+  display: grid;
+  gap: 32px;
+  grid-template-columns: repeat(2, auto);
+  max-width: max-content;
+
+  @media (max-width: 767px) {
+    gap: 10px;
+    margin-left: auto;
+  }
+}

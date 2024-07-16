@@ -18,13 +18,20 @@
 @import "./blocks/logotype";
 @import "./blocks/fixed-group";
 @import "./blocks/buttons-grid";
+@import "./blocks/label";
+@import "./blocks/swiper-button";
+@import "./blocks/swiper-button-group";
+@import "./blocks/swiper-pagination";
+@import "./blocks/swiper-navigation-group";
 
 // sections
 @import "./sections/header";
 @import "./sections/mobile-navigation";
-@import "./sections/hero";
 
 @import "./sections/section";
+
+@import "./sections/hero";
+@import "./sections/gallery";
 
 @import "./sections/footer";
 @import "./sections/modal";

@@ -1,0 +1,19 @@
+
+.swiper-navigation-group {
+  display: grid;
+  align-items: center;
+  max-width: max-content;
+  margin-left: auto;
+  gap: 42px;
+  grid-template-columns: auto;
+
+  .swiper-pagination {
+    margin-left: auto;
+  }
+
+  @media (max-width: 767px) {
+    grid-template-columns: auto auto;
+    gap: 20px;
+    align-items: center;
+  }
+}

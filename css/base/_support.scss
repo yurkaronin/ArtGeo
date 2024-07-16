@@ -29,3 +29,13 @@ input[type="radio"].visually-hidden {
   max-width: 100%;
   overflow-x: hidden;
 }
+
+.position-reset {
+  position: relative;
+  transform: none;
+  margin: 0;
+  top: auto;
+  right: auto;
+  left: auto;
+  bottom: auto;
+}

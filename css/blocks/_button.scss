@@ -66,17 +66,12 @@
     z-index: 0;
   }
 
-  @media (hover: hover) {
-    &:hover {
-      &::before {
-        left: -8px;
-        top: -8px;
-        bottom: -8px;
-        right: -8px;
-      }
-      // .button__icon {
-      //   color: var(--white);
-      // }
+  &:hover {
+    &::before {
+      left: -8px;
+      top: -8px;
+      bottom: -8px;
+      right: -8px;
     }
   }
 
@@ -99,13 +94,11 @@
       color: var(--darkorange);
     }
 
-    @media (hover: hover) {
       &:hover {
         .button__icon {
           color: var(--orange);
         }
       }
-    }
   }
 
   @media (max-width: 1380px) {
@@ -118,5 +111,14 @@
     padding: 0 20px;
     width: 100%;
     max-width: 100%;
+
+    &:hover {
+      &::before {
+        left: -4px;
+        top: -4px;
+        bottom: -4px;
+        right: -4px;
+      }
+    }
   }
 }

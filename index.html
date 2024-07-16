@@ -8,6 +8,7 @@
 
   <!-- Стили и библиотеки  -->
   <link rel="stylesheet" href="./libs/swiper-bundle.min.css">
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"> -->
   <link rel="stylesheet" href="./css/main.css">
 
 </head>
@@ -213,15 +214,33 @@
 
       <header class="gallery__header">
         <div class="wrapper">
+
           <div class="gallery__header-grid">
-            <div class="gallery__header-item">
-              <span class="gallery__label abel">Галерея</span>
+            <div class="gallery__header-column">
+              <span class="gallery__label label">Галерея</span>
               <h2 class="gallery__title title">LiGrip – это новая серия лазерных сканеров GreenValley International</h2>
             </div>
-            <div class="gallery__header-item">
-              <div class="swiper-pagination"></div>
-              <div class="swiper-button swiper-button-prev"></div>
-              <div class="swiper-button swiper-button-next"></div>
+            <div class="gallery__header-column">
+
+              <div class="swiper-navigation-group">
+              <div class="swiper-pagination position-reset"></div>
+
+              <div class="swiper-button-group">
+                <div class="swiper-button position-reset swiper-button-prev">
+                  <svg width="15" height="26" viewBox="0 0 15 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14 1L2 13L14 25" stroke="#F05000" stroke-width="2"/>
+                    </svg>
+
+                </div>
+                <div class="swiper-button position-reset swiper-button-next">
+                  <svg width="15" height="26" viewBox="0 0 15 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 1L13 13L1 25" stroke="#F05000" stroke-width="2"/>
+                    </svg>
+
+                </div>
+              </div>
+            </div>
+
             </div>
           </div>
         </div>
@@ -233,42 +252,43 @@
           <div class="swiper-wrapper">
 
             <div class="swiper-slide">
-              <a class="gallery__item" href="#">
+              <a class="gallery__item" href="./img/gallery/1.jpg" data-fslightbox="collection-1">
                 <img src="./img/gallery/1.jpg" alt="фото" loading="lazy">
               </a>
             </div>
 
             <div class="swiper-slide">
-              <a class="gallery__item" href="#">
+              <a class="gallery__item" href="./img/gallery/2.jpg" data-fslightbox="collection-1">
                 <img src="./img/gallery/2.jpg" alt="фото" loading="lazy">
               </a>
             </div>
 
             <div class="swiper-slide">
-              <a class="gallery__item" href="#">
+              <a class="gallery__item" href="./img/gallery/3.jpg" data-fslightbox="collection-1">
                 <img src="./img/gallery/3.jpg" alt="фото" loading="lazy">
               </a>
             </div>
 
             <div class="swiper-slide">
-              <a class="gallery__item" href="#">
+              <a class="gallery__item" href="./img/gallery/1.jpg" data-fslightbox="collection-1">
                 <img src="./img/gallery/1.jpg" alt="фото" loading="lazy">
               </a>
             </div>
+
             <div class="swiper-slide">
-              <a class="gallery__item" href="#">
+              <a class="gallery__item" href="./img/gallery/2.jpg" data-fslightbox="collection-1">
                 <img src="./img/gallery/2.jpg" alt="фото" loading="lazy">
               </a>
             </div>
+
             <div class="swiper-slide">
-              <a class="gallery__item" href="#">
+              <a class="gallery__item" href="./img/gallery/3.jpg" data-fslightbox="collection-1">
                 <img src="./img/gallery/3.jpg" alt="фото" loading="lazy">
               </a>
             </div>
 
           </div>
 
-          <div class="swiper-pagination"></div>
         </div>
       </div>
     </section>
@@ -1001,6 +1021,9 @@
   <!-- Скрипты и библиотеки -->
   <script src="./libs/fslightbox.min.js"></script>
   <script src="./libs/swiper-bundle.min.js"></script>
+
+  <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> -->
+
   <script src="./js/parts/swiper.js"></script>
 
   <script src="./js/parts/sticky-header.js"></script>
