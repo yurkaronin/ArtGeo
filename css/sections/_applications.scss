@@ -1,0 +1,58 @@
+.applications {
+  &__list {
+    display: grid;
+    gap: 71px 32px;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  &__image {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 21px;
+    display: block;
+  }
+  &__description {
+    display: block;
+    margin: 0;
+    font-weight: 700;
+    font-size: 18px;
+    position: relative;
+    padding-bottom: calc(10px + 2px);
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      display: block;
+      width: 16px;
+      height: 2px;
+      background-color: var(--orange);
+    }
+  }
+
+  @media (max-width: 1380px) {
+    &__list {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 47px 32px;
+    }
+    &__image {
+      height: 168px;
+    }
+  }
+  @media (max-width: 1023px) {
+    &__list {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    &__image {
+      height: 192px;
+    }
+  }
+  @media (max-width: 767px) {
+    &__list {
+      grid-template-columns: repeat(1, 1fr);
+    }
+    &__image {
+      height: 195px;
+    }
+  }
+}

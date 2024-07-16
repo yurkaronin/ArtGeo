@@ -1,4 +1,16 @@
 .section {
   padding-top: 35px;
   padding-bottom: 35px;
+
+  &--black {
+    background-color: #000;
+    color: #fff;
+
+    .title {
+      color: inherit;
+    }
+    a {
+      color: inherit;
+    }
+  }
 }
