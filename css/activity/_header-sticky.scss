@@ -6,6 +6,9 @@
     // padding-bottom: 8px;
     box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2);
   }
+  .header__grid::after {
+    opacity: 0;
+  }
 
   .header__logo .logotype svg {
     width: 102px;

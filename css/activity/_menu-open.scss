@@ -32,4 +32,8 @@
   .header:after {
     opacity: 0.15;
   }
+
+  .header__grid::after {
+    opacity: 0.15;
+  }
 }

@@ -4,6 +4,15 @@
   max-width: max-content;
   grid-template-columns: repeat(2, auto);
 
+  .button {
+    padding-inline: 20px;
+    max-width: 100%;
+  }
+
+  // @media (max-width: 1023px) {
+  //   grid-template-columns: repeat(2, 208px);
+  // }
+
   @media (max-width: 767px) {
     gap: 10px;
     grid-template-columns: repeat(1, 1fr);

@@ -150,51 +150,60 @@
 
     <!-- Первый экран  -->
     <section class="hero">
+
+      <!-- Видео фон  -->
+      <div class="hero__video">
+        <video autoplay loop muted playsinline poster="./img/hero/bg.jpg">
+          <source src="./video/hero.mp4" type="video/mp4">
+        </video>
+      </div>
       <div class="wrapper">
-        <p class="hero__text">Откройте для себя серию портативных сканеров от GreenValley International</p>
-        <h1 class="hero__title title">Ручные лазерные сканеры LiGrip</h1>
+        <div class="hero__grid">
+          <div class="hero__column hero__column-left">
+            <p class="hero__text">Откройте для себя серию портативных сканеров от GreenValley International</p>
+            <h1 class="hero__title title">Ручные лазерные сканеры LiGrip</h1>
 
-        <div class="buttons-grid">
+            <div class="buttons-grid">
 
-          <a href="#" class="button">
-            <span>Смотреть брошюру</span>
-          </a>
-
-          <a href="#" class="button button--icon">
-            <span class="button__icon">
-              <svg width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M3.40479 3.95238V1.7619C3.40479 1.34133 3.74612 1 4.16669 1H12.5476L15.5953 4.04762V16.2381C15.5953 16.6587 15.2539 17 14.8334 17H4.16669C3.74612 17 3.40479 16.6587 3.40479 16.2381V15"
-                  stroke="currentColor" stroke-width="2" stroke-miterlimit="10" />
-                <path d="M15.4048 5H11.4048V1" stroke="currentColor" stroke-width="2" stroke-miterlimit="10" />
-                <path
-                  d="M1.40479 6.55416V12.4462C1.40479 12.8721 1.85111 13.1382 2.2081 12.9247L7.13762 9.9785C7.49384 9.76539 7.49384 9.23421 7.13762 9.02111L2.2081 6.07487C1.85111 5.86216 1.40479 6.12795 1.40479 6.55416Z"
-                  stroke="currentColor" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round" />
-              </svg>
-            </span>
+              <a href="#" class="button button--icon button--mod">
+                <span class="button__icon">
+                  <svg width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M3.40479 3.95238V1.7619C3.40479 1.34133 3.74612 1 4.16669 1H12.5476L15.5953 4.04762V16.2381C15.5953 16.6587 15.2539 17 14.8334 17H4.16669C3.74612 17 3.40479 16.6587 3.40479 16.2381V15"
+                      stroke="currentColor" stroke-width="2" stroke-miterlimit="10" />
+                    <path d="M15.4048 5H11.4048V1" stroke="currentColor" stroke-width="2" stroke-miterlimit="10" />
+                    <path
+                      d="M1.40479 6.55416V12.4462C1.40479 12.8721 1.85111 13.1382 2.2081 12.9247L7.13762 9.9785C7.49384 9.76539 7.49384 9.23421 7.13762 9.02111L2.2081 6.07487C1.85111 5.86216 1.40479 6.12795 1.40479 6.55416Z"
+                      stroke="currentColor" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round" />
+                  </svg>
+                </span>
 
 
-            <span>Смотреть брошюру</span>
-          </a>
+                <span>Смотреть брошюру</span>
+              </a>
 
-          <a href="#" class="button button--icon button--mod">
-            <span class="button__icon">
-            <svg width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M3.40479 3.95238V1.7619C3.40479 1.34133 3.74612 1 4.16669 1H12.5476L15.5953 4.04762V16.2381C15.5953 16.6587 15.2539 17 14.8334 17H4.16669C3.74612 17 3.40479 16.6587 3.40479 16.2381V15"
-                stroke="currentColor" stroke-width="2" stroke-miterlimit="10" />
-              <path d="M15.4048 5H11.4048V1" stroke="currentColor" stroke-width="2" stroke-miterlimit="10" />
-              <path d="M7.18256 10V6H3.62701V10H1.40479L5.40479 14L9.40479 10H7.18256Z" stroke="currentColor"
-                stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round" />
-            </svg>
-          </span>
-            <span>Документация</span>
-          </a>
+              <a href="#" class="button button--icon button--mod">
+                <span class="button__icon">
+                  <svg width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M3.40479 3.95238V1.7619C3.40479 1.34133 3.74612 1 4.16669 1H12.5476L15.5953 4.04762V16.2381C15.5953 16.6587 15.2539 17 14.8334 17H4.16669C3.74612 17 3.40479 16.6587 3.40479 16.2381V15"
+                      stroke="currentColor" stroke-width="2" stroke-miterlimit="10" />
+                    <path d="M15.4048 5H11.4048V1" stroke="currentColor" stroke-width="2" stroke-miterlimit="10" />
+                    <path d="M7.18256 10V6H3.62701V10H1.40479L5.40479 14L9.40479 10H7.18256Z" stroke="currentColor"
+                      stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round" />
+                  </svg>
+                </span>
+                <span>Документация</span>
+              </a>
+            </div>
+          </div>
+          <div class="hero__column hero__column-right">
+            <img class="hero__image" src="./img/hero/1.png" alt="фото" loading="lazy">
+          </div>
         </div>
 
-        <div class="hero__image">
-          <img src="./img/hero/1.png" alt="фото" loading="lazy">
-        </div>
+
+
       </div>
 
     </section>
