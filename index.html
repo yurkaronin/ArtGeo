@@ -302,7 +302,8 @@
           <div class="overview__column overview__column--left">
             <span class="label">Обзор оборудования</span>
             <h2 class="title">Серия LiGrip – универсальные лазерные 3D-сканеры</h2>
-            <p class="text">LiGrip – новая серия мобильных лазерных 3D-сканеров компании GreenValley International. Благодаря
+            <p class="text">LiGrip – новая серия мобильных лазерных 3D-сканеров компании GreenValley International.
+              Благодаря
               небольшому размеру и малому весу они идеально подходят для выполнения съемок в самых разных условиях.
               Сочетание высокопроизводительного измерительного модуля Hesai с полнокруговой фотокамерой и
               интеллектуальным алгоритмом SLAM дает возможность получить детальную и полную информацию об объекте
@@ -581,36 +582,50 @@
     </section>
 
     <!-- Оставьте заявку  -->
-    <section class="form-block section">
+    <section class="feedback section">
       <div class="wrapper">
-        <div class="form-block__grid">
-          <div class="form-block__grid-item">
-            <div class="form-block__info">
-              <p class="form-block__subtitle">
-                Отправьте простую форму и мы вышлем техническую документацию и примеры данных
-              </p>
-              <h2 class="form-block__title title">
-                Ознакомьтесь с документацией LiGrip
-              </h2>
-              <form class="form-block__form" action="#" method="post">
-                <div class="form-block__form-group">
-                  <input type="text" class="form-block__input" name="name" placeholder="Ваше имя" required>
-                  <input type="tel" class="form-block__input" name="phone" placeholder="Телефон" required>
+        <div class="feedback__grid">
+          <div class="feedback__grid-column feedback__grid-column--left">
+            <p class="label">
+              Отправьте простую форму и мы вышлем техническую документацию и примеры данных
+            </p>
+            <h2 class="title">Ознакомьтесь с документацией LiGrip</h2>
+
+            <form class="form" action="#" method="post">
+
+              <div class="form__body">
+                <div class="form__grid">
+                  <div class="form__column">
+                    <input type="text" class="feedback__input" name="user-name" placeholder="Ваше имя" required>
+                  </div>
+                  <div class="form__column">
+                    <input type="tel" class="feedback__input" name="user-phone" placeholder="Телефон" required>
+                  </div>
                 </div>
-                <div class="form-block__form-check">
-                  <input type="checkbox" class="form-block__checkbox" id="agreement" name="agreement" required>
-                  <label for="agreement" class="form-block__label">
-                    Я выражаю свое согласие с Политикой конфиденциальности и разрешаю обработку своих персональных
-                    данных
+              </div>
+
+              <div class="form__footer">
+                <div class="form__check">
+                  <input type="checkbox" class="visually-hidden" id="user-agreement-1" name="user-agreement" required>
+                  <label for="user-agreement-1">
+                    Я выражаю свое согласие с Политикой конфиденциальности и разрешаю<br>
+                    обработку своих персональных данных.
                   </label>
                 </div>
-                <button type="submit" class="form-block__submit-button">Отправить</button>
-              </form>
-            </div>
+                <button type="submit" class="form__button button button--icon">
+                  <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9.93137 14.2245L15.164 16.152L19 1.5L1 10.736L6.5 13" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/>
+                    <path d="M6.89013 19.5L6 13L13.0209 7.97974L6.89013 19.5Z" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/>
+                    </svg>
+
+                  <span>Отправить</span></button>
+              </div>
+            </form>
+
           </div>
-          <div class="form-block__grid-item">
-            <div class="form-block__image">
-              <img src="./img/form-block/2.jpg" alt="LiGrip Documentation">
+          <div class="feedback__grid-column feedback__grid-column--right">
+            <div class="feedback__image">
+              <img src="./img/feedback/1.jpg" alt="LiGrip Documentation">
             </div>
           </div>
         </div>
@@ -677,37 +692,52 @@
       </div>
     </section>
 
-    <!-- Оставьте заявку  -->
-    <section class="form-block section">
+    <!-- Оставьте заявку 2 -->
+    <section class="feedback section">
       <div class="wrapper">
-        <div class="form-block__grid">
-          <div class="form-block__grid-item">
-            <div class="form-block__info">
-              <p class="form-block__subtitle">
-                Заполните простую форму и наши специалисты свяжутся с вами в ближайшее время
-              </p>
-              <h2 class="form-block__title title">
-                У Вас уникальная задача ? Обратитесь к нам !
-              </h2>
-              <form class="form-block__form" action="#" method="post">
-                <div class="form-block__form-group">
-                  <input type="text" class="form-block__input" name="name" placeholder="Ваше имя" required>
-                  <input type="tel" class="form-block__input" name="phone" placeholder="Телефон" required>
+        <div class="feedback__grid">
+          <div class="feedback__grid-column feedback__grid-column--left">
+            <p class="label">
+              Заполните простую форму и наши специалисты свяжутся с вами в ближайшее время
+            </p>
+            <h2 class="title">У Вас уникальная задача ?<br>
+              Обратитесь к нам !</h2>
+
+            <form class="form" action="#" method="post">
+
+              <div class="form__body">
+                <div class="form__grid">
+                  <div class="form__column">
+                    <input type="text" class="feedback__input" name="user-name" placeholder="Ваше имя" required>
+                  </div>
+                  <div class="form__column">
+                    <input type="tel" class="feedback__input" name="user-phone" placeholder="Телефон" required>
+                  </div>
                 </div>
-                <div class="form-block__form-check">
-                  <input type="checkbox" class="form-block__checkbox" id="agreement" name="agreement" required>
-                  <label for="agreement" class="form-block__label">
-                    Я выражаю свое согласие с Политикой конфиденциальности и разрешаю обработку своих персональных
-                    данных
+              </div>
+
+              <div class="form__footer">
+                <div class="form__check">
+                  <input type="checkbox" class="visually-hidden" id="user-agreement-1" name="user-agreement" required>
+                  <label for="user-agreement-1">
+                    Я выражаю свое согласие с Политикой конфиденциальности и разрешаю<br>
+                    обработку своих персональных данных.
                   </label>
                 </div>
-                <button type="submit" class="form-block__submit-button">Отправить</button>
-              </form>
-            </div>
+                <button type="submit" class="form__button button button--icon">
+                  <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9.93137 14.2245L15.164 16.152L19 1.5L1 10.736L6.5 13" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/>
+                    <path d="M6.89013 19.5L6 13L13.0209 7.97974L6.89013 19.5Z" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/>
+                    </svg>
+
+                  <span>Отправить</span></button>
+              </div>
+            </form>
+
           </div>
-          <div class="form-block__grid-item">
-            <div class="form-block__image">
-              <img src="./img/form-block/1.jpg" alt="LiGrip Documentation">
+          <div class="feedback__grid-column feedback__grid-column--right">
+            <div class="feedback__image">
+              <img src="./img/feedback/2.jpg" alt="LiGrip Documentation">
             </div>
           </div>
         </div>

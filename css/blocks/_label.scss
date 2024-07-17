@@ -4,5 +4,10 @@
   font-size: 16px;
   line-height: 150%;
   color: var(--orange);
+  margin: 0;
   margin-bottom: 30px;
+
+  @media (max-width: 767px) {
+    margin-bottom: 12px;
+  }
 }
