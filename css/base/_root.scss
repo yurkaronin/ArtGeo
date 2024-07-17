@@ -11,4 +11,10 @@
 
   --darkblue-06: rgba(19, 23, 48, 0.6);
 
+  --header-height: 64px;
+
+  @media (max-width: 767px) {
+    --header-height: 68px;
+  }
+
 }

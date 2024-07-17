@@ -9,6 +9,12 @@
   --line: #d4d4d4;
   --lightgrey: #f2f2f2;
   --darkblue-06: rgba(19, 23, 48, 0.6);
+  --header-height: 64px;
+}
+@media (max-width: 767px) {
+  :root {
+    --header-height: 68px;
+  }
 }
 
 /* inter-100 - cyrillic_latin */
@@ -274,6 +280,7 @@ html {
   scroll-behavior: smooth;
   height: 100%;
   scrollbar-gutter: stable;
+  scroll-padding-top: var(--header-height);
 }
 
 html *,
@@ -1067,7 +1074,7 @@ input[type=radio].visually-hidden {
 
 .form__grid {
   display: grid;
-  gap: 32px;
+  gap: 20px 32px;
   grid-template-columns: repeat(2, 1fr);
   margin-bottom: 32px;
 }
@@ -1155,7 +1162,7 @@ textarea {
   font-weight: 400;
   font-size: 18px;
   color: var(--dark);
-  padding: 15px 24px;
+  padding: 13px 24px;
   height: 56px;
   background: var(--white);
   border: 1px solid var(--line);
@@ -1164,12 +1171,14 @@ textarea {
 @media (max-width: 767px) {
   input,
   textarea {
-    height: 50px;
+    padding: 13px 20px;
+    height: 50px !important;
   }
 }
 
 textarea {
-  height: 200px;
+  height: 120px;
+  overflow: hidden;
 }
 
 .features__list {
@@ -1399,6 +1408,22 @@ textarea {
     grid-row-start: initial;
     grid-row-end: initial;
   }
+}
+
+.map {
+  width: 100%;
+  max-width: 100%;
+  position: relative;
+  z-index: 10;
+  overflow: hidden;
+}
+.map .map__content {
+  height: 589px;
+  width: 100%;
+}
+
+[class*=copyrights-pane] {
+  display: none !important;
 }
 
 .header {

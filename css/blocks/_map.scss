@@ -1,0 +1,17 @@
+.map {
+  width: 100%;
+  max-width: 100%;
+  position: relative;
+  z-index: 10;
+  overflow: hidden;
+
+  .map__content {
+    height: 589px;
+    width: 100%;
+  }
+}
+
+[class*=copyrights-pane] {
+  display: none !important
+}
+
