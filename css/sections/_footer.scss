@@ -1,0 +1,143 @@
+.footer {
+  background-color: #000000;
+  color: #ffffff;
+  padding-bottom: 0;
+  position: relative;
+  .title {
+    color: inherit;
+    margin-bottom: 30px;
+  }
+  &__grid {
+    display: grid;
+    gap: 0;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  &__map {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    top: 0;
+    right: 0;
+
+    iframe {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  &__details {
+    padding-top: 70px;
+    padding-right: 32px;
+    padding-bottom: 16px;
+  }
+  &__bottom {
+    position: relative;
+    padding-top: 16px;
+
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 1px;
+      background: var(--white);
+      opacity: 0.2;
+    }
+  }
+
+  &__logo {
+    max-width: 136px;
+    width: 100%;
+  }
+
+  &__copyright {
+    margin: 0;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 171%;
+    color: #ededed;
+
+    b {
+      font-weight: 700;
+      color: var(--white);
+    }
+  }
+
+  &__bottom-flex {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    .footer__logo {
+      margin-right: 24px;
+    }
+    .footer__copyright {
+      margin-right: 45px;
+      max-width: max-content;
+    }
+
+  }
+
+  @media (max-width: 1380px) {
+    &__grid {
+      gap: 0;
+      grid-template-columns: repeat(1, 1fr);
+    }
+    &__map {
+      position: relative;
+      margin-left: -40px;
+      margin-right: -40px;
+      width: calc(100% + 40px + 40px);
+      // max-width: calc(100% + 40px + 40px);
+      height: 488px;
+    }
+    &__column--mod {
+      order: -1;
+    }
+    &__bottom-flex {
+      justify-content: space-between;
+      width: 100%;
+      max-width: 100%;
+    }
+    .site-developers {
+      margin-left: auto;
+    }
+
+    &__bottom {
+      padding-top: 10px;
+    }
+    &__details {
+      padding-right: 0;
+    }
+  }
+
+  @media (max-width: 1023px) {
+    &__details {
+      padding-top: 45px;
+      padding-bottom: 20px;
+    }
+  }
+
+  @media (max-width: 767px) {
+    &__logo {
+      max-width: 105px;
+      height: auto;
+      margin-right: auto;
+    }
+    .site-developers {
+      margin-left: 0;
+      margin-right: auto;
+    }
+    .footer__copyright {
+      margin-right: 0;
+      max-width: 210px;
+    }
+    &__map {
+      margin-left: -20px;
+      margin-right: -20px;
+      width: calc(100% + 20px + 20px);
+      // max-width: calc(100% + 40px + 40px);
+      height: 300px;
+    }
+  }
+}

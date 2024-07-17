@@ -1,0 +1,68 @@
+.address-list {
+  margin-bottom: 75px;
+  &__grid {
+    display: grid;
+    gap: 22px 32px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  &__item {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 133%;
+    color: var(--white);
+  }
+  &__item--mod {
+    grid-column: span 2;
+  }
+
+  &__label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 143%;
+    color: var(--white);
+    opacity: 0.7;
+  }
+
+  a[href^="mailto:"] {
+    color: var(--darkorange);
+  }
+
+  @media (max-width: 1380px) {
+    &__grid {
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px 32px;
+    }
+    &__item--mod {
+      grid-column: span 4;
+    }
+  }
+
+  @media (max-width: 1023px) {
+    &__grid {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px 32px;
+    }
+    &__item--mod {
+      grid-column: span 3;
+    }
+  }
+
+  @media (max-width: 767px) {
+    margin-bottom: 44px;
+    &__grid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px 15px;
+    }
+    &__item {
+      font-size: 16px;
+    }
+    &__item--mod {
+      grid-column: span 2;
+    }
+
+  }
+}

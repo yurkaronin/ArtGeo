@@ -1,0 +1,35 @@
+.features {
+  &__list {
+    display: grid;
+    gap: 43px 32px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  &__icon {
+    margin-bottom: 17px;
+    height: 45px;
+    width: 45px;
+    display: flex;
+
+    svg {
+      display: block;
+      flex-shrink: 0;
+    }
+  }
+  &__text {
+    margin: 0;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 125%;
+    color: var(--dark);
+  }
+
+  @media (max-width: 767px) {
+    &__list {
+      gap: 26px;
+      grid-template-columns: repeat(1, 1fr);
+    }
+    &__icon {
+      margin-bottom: 14px;
+    }
+  }
+}

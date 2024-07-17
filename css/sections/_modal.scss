@@ -14,23 +14,24 @@
   pointer-events: none;
   background-color: var(--darkblue-06);
 
-  .modal__close {
+  &__close {
     position: absolute;
-    top: 6px;
-    right: 10px;
-    display: block;
-    width: max-content;
-    padding: 10px;
-    color: var(--darkblue);
+    top: -24px;
+    right: 48px;
+    width: 48px;
+    height: 48px;
+    padding: 0;
+    color: var(--white);
     border: none;
-    transition: color 0.3s;
+    transition: all 0.3s;
     cursor: pointer;
-    background-color: transparent;
+    background-color: var(--darkorange);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     svg {
       display: block;
-      width: 18px;
-      height: 18px;
     }
 
     &:hover,
@@ -42,15 +43,18 @@
 
   .wrapper {
     position: relative;
+    max-height: 90vh;
+    overflow: auto;
+    padding-top: 24px;
   }
 
   &__body {
     position: relative;
-    width: 455px !important;
-    padding: 50px 45px 55px;
+    width: 832px !important;
+    padding: 38px 48px 48px;
     margin: 0 auto;
     background: var(--white);
-    border-radius: 30px 0 0 0;
+
   }
 
   .form__element {
@@ -63,30 +67,21 @@
     opacity: 1;
   }
 
-  @media (max-width: 767px) {
+
+
+  @media (max-width: 1023px) {
     &__body {
       width: 100% !important;
-      padding: 34px 30px 30px;
+      padding: 25px 20px 25px;
+    }
+
+    &__close {
+      position: absolute;
+      top: -20px;
+      right: 20px;
+      width: 40px;
+      height: 40px;
     }
   }
 
-  // Стилизация контента
-
-  .form__grid {
-    grid-template-columns: repeat(1, 1fr);
-  }
-
-  .form__footer {
-    grid-column: initial;
-    gap: 32px;
-    grid-template-columns: 1fr;
-  }
-
-  .form .button {
-    margin-left: 0;
-  }
-
-  .form__item::after {
-    background-color: var(--darkblue-02);
-  }
 }

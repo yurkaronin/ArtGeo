@@ -1,0 +1,14 @@
+.why-us {
+  &__grid {
+    display: grid;
+    gap: 30px 32px;
+    grid-template-columns: 9fr 3fr;
+    align-items: flex-start;
+  }
+
+  @media (max-width: 1380px) {
+    &__grid {
+      grid-template-columns: 1fr;
+    }
+  }
+}

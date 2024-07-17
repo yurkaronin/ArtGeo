@@ -11,7 +11,6 @@
 @import "./blocks/wrapper";
 @import "./blocks/grid-base";
 @import "./blocks/title";
-
 @import "./blocks/main-navigation";
 @import "./blocks/link";
 @import "./blocks/button-menu";
@@ -29,6 +28,10 @@
 @import "./blocks/text";
 @import "./blocks/advantages";
 @import "./blocks/form";
+@import "./blocks/features";
+@import "./blocks/partners";
+@import "./blocks/address-list";
+@import "./blocks/site-developers";
 
 // sections
 @import "./sections/header";
@@ -41,6 +44,7 @@
 @import "./sections/overview";
 @import "./sections/applications";
 @import "./sections/feedback";
+@import "./sections/why-us";
 
 @import "./sections/footer";
 @import "./sections/modal";
@@ -51,6 +55,7 @@
 // activity
 @import "./activity/header-sticky";
 @import "./activity/menu-open";
+@import "./activity/modal-open";
 // @import "./activity/mobile-nav-accordion";
 // @import "./activity/search-show";
 
