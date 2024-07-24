@@ -1,4 +1,5 @@
 .gallery {
+  margin-top: 35px;
   &__header {
     margin-bottom: 55px;
   }
@@ -82,9 +83,7 @@
       grid-template-columns: 1fr auto;
     }
 
-    .swiper-slide {
-      max-width: 688px;
-    }
+
     &__navigation {
       gap: 24px;
     }
@@ -95,6 +94,19 @@
         width: 104px;
         height: 104px;
       }
+    }
+  }
+  @media (max-width:1279px) {
+
+  }
+
+  @media (max-width: 1023px) {
+    margin-top: 0;
+    &__header-grid {
+      align-items: flex-end;
+    }
+    .swiper-slide {
+      max-width: 688px;
     }
   }
 

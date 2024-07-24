@@ -1,4 +1,5 @@
 .footer {
+  margin-top: 35px;
   background-color: #000000;
   color: #ffffff;
   padding-bottom: 0;
@@ -112,13 +113,15 @@
   }
 
   @media (max-width: 1023px) {
+
+  }
+
+  @media (max-width: 767px) {
+    margin-top: 25.5px;
     &__details {
       padding-top: 45px;
       padding-bottom: 20px;
     }
-  }
-
-  @media (max-width: 767px) {
     &__logo {
       max-width: 105px;
       height: auto;

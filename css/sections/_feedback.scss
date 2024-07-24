@@ -1,8 +1,11 @@
 .feedback {
+  // padding-top: 123px;
+  // padding-bottom: 70px;
   &__grid {
     display: grid;
     gap: 40px 32px;
     grid-template-columns: repeat(2, 1fr);
+    align-items: center;
   }
   &__image {
     transition: all 0.3s;
@@ -14,13 +17,24 @@
     }
   }
 
-  @media (max-width: 1380px) {
+  @media (max-width: 1279px) {
+    // padding-top: 70px;
+    // padding-bottom: 35px;
     &__grid {
       grid-template-columns: repeat(1, 1fr);
       gap: 25px;
     }
     &__grid-column--right {
       order: -1;
+    }
+    &__image img {
+      width: 100%;
+    }
+
+    .title {
+      br {
+        display: none;
+      }
     }
   }
 }

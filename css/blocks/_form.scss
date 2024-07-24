@@ -35,7 +35,7 @@
         display: block;
         position: absolute;
         top: 8px;
-        left: 8px;
+        left: 7px;
         width: 18px;
         height: 14px;
         background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg viewBox='0 0 18 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M1 5L7.24242 12L17 1' stroke='white' stroke-width='2'/%3e%3c/svg%3e ");
@@ -44,8 +44,6 @@
         transition: all 0.3s;
       }
     }
-
-
 
     // Активный чекбокс
     input[type="checkbox"]:checked + label::before {
@@ -59,6 +57,21 @@
 
   &__column--mod {
     grid-column: span 2;
+  }
+
+  @media (max-width: 1279px) {
+    &__check label {
+      br {
+        display: none;
+      }
+      &::before {
+        top: -5px;
+      }
+      &::after {
+        top: 4px;
+        left: 8px;
+      }
+    }
   }
 
   @media (max-width: 767px) {

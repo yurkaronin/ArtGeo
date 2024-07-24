@@ -7,7 +7,7 @@
   text-decoration: none;
   transition: all 0.3s;
   position: relative;
-  color: var(--orange);
+  color: var(--darkorange);
 
   &::after {
     content: "";
@@ -16,7 +16,7 @@
     opacity: 0;
     transition: all 0.3s;
     height: 1px;
-    background-color: var(--orange);
+    color: var(--darkorange);
     position: absolute;
     bottom: 2px;
     left: 0;
@@ -43,6 +43,7 @@
   @media (max-width: 767px) {
     font-size: 12px;
     font-weight: 500;
+    line-height: 1.3;
   }
 }
 

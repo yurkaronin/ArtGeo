@@ -19,6 +19,12 @@
     // height: 80px;
     display: block;
     margin-bottom: 15px;
+    transition: all 0.3s;
+
+    &:hover {
+      scale: 1.1;
+      box-shadow: 2px 2px 12px 0 rgba(0, 0, 0, 0.2);
+    }
   }
   &__name {
     display: block;
@@ -39,10 +45,17 @@
   @media (max-width: 1380px) {
     &__grid {
       grid-template-columns: repeat(4, 1fr);
+      gap: 41px 32px;
     }
     &__logo {
       width: 208px;
       // height: 104px;
+    }
+  }
+  @media (max-width: 1023px) {
+    &__grid {
+      grid-template-columns: repeat(3, 1fr);
+
     }
   }
 

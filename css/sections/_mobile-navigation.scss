@@ -84,6 +84,7 @@
         }
         .mobile-navigation__icon {
           border: 1px solid transparent;
+          color: var(--white);
         }
       }
     }
@@ -94,6 +95,7 @@
       width: 88px;
       height: 88px;
       border: 1px solid var(--line);
+      color:  var(--darkorange);;
 
       svg {
         flex-shrink: 0;
@@ -117,6 +119,7 @@
           top: -16px;
           bottom: -16px;
         }
+
 
       }
     }

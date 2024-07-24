@@ -4,13 +4,19 @@
     gap: 71px 32px;
     grid-template-columns: repeat(4, 1fr);
   }
+
   &__image {
     height: 200px;
     width: 100%;
     object-fit: cover;
     margin-bottom: 21px;
     display: block;
+    transition: all 0.3s;
   }
+  &__item:hover &__image {
+    scale: 1.1;
+  }
+
   &__description {
     display: block;
     margin: 0;
@@ -27,7 +33,11 @@
       width: 16px;
       height: 2px;
       background-color: var(--orange);
+      transition: all 0.3s;
     }
+  }
+  &__item:hover &__description::after {
+    width: 24px;
   }
 
   @media (max-width: 1380px) {

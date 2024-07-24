@@ -4,15 +4,18 @@
     gap: 43px 32px;
     grid-template-columns: repeat(2, 1fr);
   }
+
   &__icon {
     margin-bottom: 17px;
     height: 45px;
     width: 45px;
     display: flex;
+    transition: all 0.3s;
 
     svg {
       display: block;
       flex-shrink: 0;
+      transition: all 0.3s;
     }
   }
   &__text {
@@ -21,6 +24,14 @@
     font-size: 16px;
     line-height: 125%;
     color: var(--dark);
+  }
+
+  &__item:hover &__icon {
+    scale: 1.1;
+
+    path {
+      stroke: #ff9600;
+    }
   }
 
   @media (max-width: 767px) {

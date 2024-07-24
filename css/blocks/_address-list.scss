@@ -26,9 +26,23 @@
     color: var(--white);
     opacity: 0.7;
   }
+  a {
+    transition: all 0.3s;
+    &:hover,
+    &:active,
+    &:focus {
+      color: var(--orange);
+    }
+  }
 
   a[href^="mailto:"] {
     color: var(--darkorange);
+    &:hover,
+    &:active,
+    &:focus {
+      color: var(--orange);
+      text-decoration: underline;
+    }
   }
 
   @media (max-width: 1380px) {

@@ -21,13 +21,20 @@ document.addEventListener('DOMContentLoaded', function () {
       breakpoints: {
         320: {
           spaceBetween: 20,
+          centeredSlides: true,
         },
 
         768: {
           spaceBetween: 24,
+          centeredSlides: true,
         },
         1024: {
           spaceBetween: 32,
+          centeredSlides: true,
+        },
+        1280: {
+          spaceBetween: 32,
+          centeredSlides: false,
         },
       },
     });

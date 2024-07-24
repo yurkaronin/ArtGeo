@@ -30,4 +30,10 @@
     margin-bottom: 22px;
   }
 
+  @media (max-width: 767px) {
+    &__image img {
+      margin-right: auto;
+      margin-left: auto;
+    }
+  }
 }
