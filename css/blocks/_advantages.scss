@@ -1,9 +1,11 @@
 .advantages {
+
   &__list {
     display: grid;
     gap: 40px;
     grid-template-columns: repeat(1, 1fr);
   }
+
   &__icon {
     margin-bottom: 11px;
     height: 45px;
@@ -13,8 +15,13 @@
     svg {
       display: block;
       flex-shrink: 0;
+      transition: all 0.3s;
+    }
+    path {
+      transition: all 0.3s;
     }
   }
+
   &__title {
     display: block;
     margin: 0;
@@ -24,10 +31,18 @@
     line-height: 133%;
     color: var(--dark);
   }
+
   &__description {
     margin: 0;
     font-size: 14px;
     line-height: 1.5;
+  }
+
+  &__item:hover &__icon svg {
+    scale: 1.1;
+  }
+  &__item:hover &__icon path {
+    stroke: #FF9600;
   }
 
   @media (max-width: 1380px) {

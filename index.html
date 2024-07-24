@@ -258,15 +258,56 @@
             </div>
 
             <div class="swiper-slide">
-              <a class="gallery__item" href="./img/gallery/2.jpg" data-fslightbox="collection-1">
+              <!-- <a class="gallery__item" href="./img/gallery/2.jpg" data-fslightbox="collection-1">
                 <img src="./img/gallery/2.jpg" alt="фото" loading="lazy">
-              </a>
+              </a> -->
+
+              <div class="gallery__youtube">
+                <a data-fslightbox="html5-youtube-videos" href="https://www.youtube.com/embed/DZcbcZZLCY4">
+                  <img class="img" src="https://i.ytimg.com/vi/DZcbcZZLCY4/maxresdefault.jpg"
+                    alt="Heroes Tonight - Fullscreen Lightbox">
+                    <div class="gallery__navigation">
+
+                      <!-- декоративная кнопка  -->
+                      <div class="gallery__decorate-button">
+                        <svg width="20" height="26" viewBox="0 0 20 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M1 3.74164V22.2596C1 23.5979 2.33898 24.4345 3.40993 23.7635L18.1985 14.5038C19.2672 13.8341 19.2672 12.1647 18.1985 11.4949L3.40993 2.23529C2.33898 1.56678 1 2.40212 1 3.74164Z"
+                            stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round" />
+                        </svg>
+
+                      </div>
+
+                      <span class="gallery__label">Смотреть<br>видео</span>
+                    </div>
+                </a>
+              </div>
             </div>
 
             <div class="swiper-slide">
-              <a class="gallery__item" href="./img/gallery/3.jpg" data-fslightbox="collection-1">
+              <!-- <a class="gallery__item" href="./img/gallery/3.jpg" data-fslightbox="collection-1">
                 <img src="./img/gallery/3.jpg" alt="фото" loading="lazy">
-              </a>
+              </a> -->
+              <div class="gallery__local-video">
+                <a data-poster="./img/gallery/3.jpg" data-fslightbox="html5-demo-videos" href="./video/video.mp4">
+                  <img class="img" src="./img/gallery/3.jpg" alt="Название видео">
+
+                  <div class="gallery__navigation">
+
+                  <!-- декоративная кнопка  -->
+                  <div class="gallery__decorate-button">
+                    <svg width="20" height="26" viewBox="0 0 20 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M1 3.74164V22.2596C1 23.5979 2.33898 24.4345 3.40993 23.7635L18.1985 14.5038C19.2672 13.8341 19.2672 12.1647 18.1985 11.4949L3.40993 2.23529C2.33898 1.56678 1 2.40212 1 3.74164Z"
+                        stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round" />
+                    </svg>
+
+                  </div>
+
+                  <span class="gallery__label">Смотреть<br>видео</span>
+                </div>
+                </a>
+              </div>
             </div>
 
             <div class="swiper-slide">
@@ -972,7 +1013,7 @@
 
         <div class="footer__column footer__column--mod">
           <div class="footer__map">
-              <!-- карта  -->
+            <!-- карта  -->
             <div class="map">
               <div class="map__content js-map" id="map"></div>
             </div>
@@ -1028,9 +1069,11 @@
               </div>
               <button type="submit" class="form__button button button--icon">
                 <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M9.93137 14.2245L15.164 16.152L19 1.5L1 10.736L6.5 13" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/>
-                  <path d="M6.89013 19.5L6 13L13.0209 7.97974L6.89013 19.5Z" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/>
-                  </svg>
+                  <path d="M9.93137 14.2245L15.164 16.152L19 1.5L1 10.736L6.5 13" stroke="white" stroke-width="2"
+                    stroke-miterlimit="10" stroke-linejoin="round" />
+                  <path d="M6.89013 19.5L6 13L13.0209 7.97974L6.89013 19.5Z" stroke="white" stroke-width="2"
+                    stroke-miterlimit="10" stroke-linejoin="round" />
+                </svg>
                 <span>Отправить</span></button>
             </div>
           </form>
@@ -1039,9 +1082,9 @@
         <!-- Кнопка закрытия окна  -->
         <button class="modal__close js-close-modal" type="button" title="Закрыть окно">
           <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M1 1L17 17" stroke="white" stroke-width="2"/>
-            <path d="M17 1L1 17" stroke="white" stroke-width="2"/>
-            </svg>
+            <path d="M1 1L17 17" stroke="white" stroke-width="2" />
+            <path d="M17 1L1 17" stroke="white" stroke-width="2" />
+          </svg>
 
         </button>
 
@@ -1063,18 +1106,18 @@
         <button class="button button--icon">
           <span class="button__icon">
             <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M1.5 1.5L17.5 17.5" stroke="white" stroke-width="2"/>
-            <path d="M17.5 1.5L1.5 17.5" stroke="white" stroke-width="2"/>
+              <path d="M1.5 1.5L17.5 17.5" stroke="white" stroke-width="2" />
+              <path d="M17.5 1.5L1.5 17.5" stroke="white" stroke-width="2" />
             </svg>
-            </span>
+          </span>
           <span>Закрыть</span></button>
 
         <!-- Кнопка закрытия окна  -->
         <button class="modal__close js-close-modal" type="button" title="Закрыть окно">
           <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M1 1L17 17" stroke="white" stroke-width="2"/>
-            <path d="M17 1L1 17" stroke="white" stroke-width="2"/>
-            </svg>
+            <path d="M1 1L17 17" stroke="white" stroke-width="2" />
+            <path d="M17 1L1 17" stroke="white" stroke-width="2" />
+          </svg>
 
         </button>
 

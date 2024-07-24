@@ -7,6 +7,7 @@
   li {
     position: relative;
     padding-left: calc(8px + 8px);
+    transition: all 0.3s;
 
     &::after {
       content: "";
@@ -17,6 +18,15 @@
       position: absolute;
       top: 15px;
       left: 0;
+      transition: all 0.3s;
+    }
+
+    &:hover {
+      color: var(--dark);
+
+      &::after {
+        width: 12px;
+      }
     }
   }
 }

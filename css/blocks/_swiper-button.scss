@@ -27,6 +27,11 @@
     z-index: 2;
     pointer-events: none;
     width: 15px;
+    transition: all 0.3s;
+
+    path {
+      transition: all 0.3s;
+    }
   }
 
   &:hover {
@@ -35,6 +40,16 @@
       top: -8px;
       bottom: -8px;
       right: -8px;
+      box-shadow: 2px 2px 12px 0 rgba(0, 0, 0, 0.2);
+
+
+    }
+    svg {
+      scale: 1.2;
+    }
+
+    svg path {
+      stroke: #ff9600;
     }
   }
 

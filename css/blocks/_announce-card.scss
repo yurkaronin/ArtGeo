@@ -13,6 +13,7 @@
     position: relative;
     padding-right: calc(16px + 5px);
     max-width: max-content;
+    color: var(--dark);
 
     &::after {
       content: "";

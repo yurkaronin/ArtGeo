@@ -26,7 +26,8 @@
     background-color: transparent;
     &:hover,
     &:active,
-    &:focus {
+    &:focus,
+    &.active {
       background: var(--darkorange);
       color: var(--white);
     }

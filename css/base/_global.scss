@@ -44,6 +44,19 @@ button {
   font-size: inherit;
   line-height: inherit;
   letter-spacing: inherit;
+  transition: all 0.3s;
+}
+
+input,
+textarea {
+  outline: none;
+  &:hover {
+    border: 1px solid #ff9600;
+  }
+  &:active,
+  &:focus {
+    border: 1px solid #1d1d1b;
+  }
 }
 
 a {
