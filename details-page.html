@@ -1,0 +1,1152 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Область применения</title>
+
+  <!-- Стили и библиотеки  -->
+  <link rel="stylesheet" href="./libs/swiper-bundle.min.css">
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"> -->
+  <link rel="stylesheet" href="./css/main.css">
+
+</head>
+
+<body class="body">
+
+  <!-- Шапка  -->
+  <div class="fixed-group">
+    <header class="header">
+      <div class="wrapper">
+        <div class="header__grid">
+
+          <!-- Лого  -->
+          <div class="header__logo">
+            <a class="logotype" href="#">
+              <svg viewBox="0 0 136 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M51.7981 20.5552C53.7905 18.8484 60.2742 11.8699 62.6629 13.8682C65.0575 15.8694 64.68 18.3377 67.0717 20.339C67.6585 19.9042 68.8307 19.0346 69.4168 18.6013C71.2073 19.7915 72.4418 23.9044 73.0279 23.4703C75.9906 23.791 72.444 26.5297 74.7899 24.7928C75.9928 26.4163 77.7826 27.6012 77.2101 29.2803C57.8849 46.1088 54.3856 51.1115 32.0541 63.8781C29.1072 64.8055 28.4618 60.2571 28.4175 56.5205C28.4333 57.7678 26.6277 55.3325 26.6435 56.5798C24.838 54.1453 23.0039 49.2191 24.7479 46.6682L51.7981 20.5552Z"
+                  fill="#FF9600" />
+                <path
+                  d="M51.7982 20.5553C52.3437 20.0882 53.227 19.2254 54.2686 18.2597C53.1512 19.0384 52.2222 19.4972 51.7066 19.1548C48.7439 18.8379 51.0762 15.853 52.8353 14.5523C51.0455 13.3614 54.0075 13.6813 52.8068 12.0585C50.3994 8.80996 47.9927 5.56743 43.8443 4.86981C42.6534 4.48984 41.4369 1.62427 40.2362 0C33.1979 5.21299 30.2022 4.91035 25.5712 13.3711C21.5106 20.1491 11.8278 21.9092 8.00505 28.8944C6.84863 31.0083 1.50704 29.9322 3.3456 34.8614L5.10237 33.5592C5.1489 37.2929 1.58433 36.1657 0.427155 38.2766C1.52354 39.7597 2.11488 40.5677 2.22069 41.6423C1.47851 41.5935 -0.946143 42.2663 0.399387 42.2198L2.20418 44.6543C1.63385 46.3364 4.62209 42.7124 4.04876 44.39C4.65061 45.2032 5.8543 46.8268 6.4554 47.6378C7.05725 48.451 6.47117 48.8851 5.88508 49.3184C6.47117 48.8851 7.64409 48.0147 8.23018 47.5807C8.83203 48.3917 10.0327 50.013 10.6346 50.824C11.2364 51.6342 10.6503 52.0705 10.0612 52.5046C11.2672 54.1281 21.8003 47.5935 22.9882 47.9712L24.7473 46.6668L51.7982 20.5553Z"
+                  fill="#F05000" />
+                <path
+                  d="M21.5991 23.1436L31.2301 39.9277H26.8364L24.8507 36.2857H14.178L12.2569 39.9277H8.31787L17.8229 23.1436H21.5991ZM23.1922 33.2249L19.5459 26.3958L15.7719 33.2249H23.1922Z"
+                  fill="white" />
+                <path
+                  d="M46.9616 23.1436C47.778 23.1436 48.8857 23.239 49.6324 23.8562C50.5419 24.5749 50.6064 25.6149 50.6064 26.3966V30.1378C50.6064 30.5613 50.5779 31.8627 49.7307 32.6076C48.8857 33.357 47.2903 33.3878 46.8332 33.3878H36.3564V39.927H32.4519V23.1428H46.9616M36.3564 26.0076V30.5283H44.9452C45.598 30.5283 46.022 30.4637 46.2802 30.2669C46.7034 29.941 46.7034 29.4529 46.7034 29.1916V27.3391C46.7034 27.0777 46.7034 26.5896 46.2802 26.2682C46.022 26.0715 45.598 26.0069 44.9452 26.0069H36.3564V26.0076Z"
+                  fill="white" />
+                <path d="M65.3645 39.9277H61.46V26.1999H53.7471V23.1436H73.0798V26.1999H65.3645V39.9277Z"
+                  fill="white" />
+                <path d="M92.05 23.1436V26.1999H80.1414V39.9277H76.2361V23.1436H92.05Z" fill="#1D1D1B" />
+                <path
+                  d="M112.451 23.1436V26.0076H99.1752V29.748H106.923V32.6076H99.1752V36.8684H112.617V39.9277H95.2744V23.1436H112.451Z"
+                  fill="#1D1D1B" />
+                <path
+                  d="M115.304 27.1092C115.304 26.3966 115.304 24.8332 116.218 23.9576C117.029 23.1744 118.398 23.1436 119.467 23.1436H131.836C132.908 23.1436 134.277 23.1744 135.088 23.9576C136 24.8332 136 26.3966 136 27.1092V35.9575C136 36.6761 136 38.2381 135.088 39.1152C134.277 39.8954 132.908 39.9277 131.836 39.9277H119.467C118.398 39.9277 117.029 39.8954 116.218 39.1152C115.304 38.2381 115.304 36.6761 115.304 35.9575V27.1092ZM119.209 36.8684H132.094V26.1999H119.209V36.8684Z"
+                  fill="#1D1D1B" />
+              </svg>
+
+            </a>
+          </div>
+
+          <!-- Навигация  -->
+          <div class="header__nav">
+            <div class="main-navigation">
+              <nav>
+                <ul class="main-navigation__list list-reset">
+                  <li class="main-navigation__item">
+                    <a class="main-navigation__link" href="#anchor-overview">Оборудование</a>
+                  </li>
+                  <li class="main-navigation__item">
+                    <a class="main-navigation__link" href="#anchor-applications">Области применения</a>
+                  </li>
+                  <li class="main-navigation__item">
+                    <a class="main-navigation__link" href="#anchor-why-us">О компании</a>
+                  </li>
+                  <li class="main-navigation__item">
+                    <a class="main-navigation__link" href="#anchor-footer">Контакты</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+
+          <div class="header__left">
+
+            <!-- Контакты  -->
+            <div class="header__contacts">
+              <a href="tel:+74957817888" class="header__tel link link--mod">+7 (495) 781-7888</a>
+
+              <a class="header__link link" href="#" data-target="modal-call-back">Получить консультацию</a>
+
+            </div>
+            <!-- Кнопка показать меню  -->
+            <button class="header__button-menu button-menu js-menu-btn" title="Открыть меню сайта">
+              <span></span>
+            </button>
+          </div>
+
+        </div>
+      </div>
+    </header>
+
+    <!-- Мобильная навигация  -->
+    <div class="mobile-navigation js-mobile-nav">
+      <div class="mobile-navigation__container">
+        <div class="wrapper">
+
+          <nav>
+            <ul class="mobile-navigation__list list-reset">
+              <li class="mobile-navigation__item">
+                <a class="mobile-navigation__link" href="#anchor-overview">
+                  <span>Оборудование</span>
+                  <span class="mobile-navigation__icon"><svg width="13" height="22" viewBox="0 0 13 22" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1 1L11 11L1 21" stroke="currentColor" stroke-width="2" />
+                    </svg>
+                  </span>
+                </a>
+              </li>
+              <li class="mobile-navigation__item">
+                <a class="mobile-navigation__link" href="#anchor-applications">
+                  <span>Области применения</span>
+                  <span class="mobile-navigation__icon"><svg width="13" height="22" viewBox="0 0 13 22" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1 1L11 11L1 21" stroke="currentColor" stroke-width="2" />
+                    </svg>
+                  </span>
+                </a>
+              </li>
+              <li class="mobile-navigation__item">
+                <a class="mobile-navigation__link" href="#anchor-why-us">
+                  <span>О компании</span>
+                  <span class="mobile-navigation__icon"><svg width="13" height="22" viewBox="0 0 13 22" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1 1L11 11L1 21" stroke="currentColor" stroke-width="2" />
+                    </svg>
+                  </span>
+                </a>
+              </li>
+              <li class="mobile-navigation__item">
+                <a class="mobile-navigation__link" href="#anchor-footer">
+                  <span>Контакты</span>
+                  <span class="mobile-navigation__icon"><svg width="13" height="22" viewBox="0 0 13 22" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1 1L11 11L1 21" stroke="currentColor" stroke-width="2" />
+                    </svg>
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <main class="main">
+
+    <!-- Первый экран  -->
+    <section class="hero" id="anchor-hero">
+
+      <!-- Видео фон  -->
+      <div class="hero__video">
+        <video autoplay loop muted playsinline poster="./img/hero/bg.jpg">
+          <source src="./video/hero.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="wrapper">
+        <div class="hero__grid">
+          <div class="hero__column hero__column-left">
+            <p class="hero__text">Откройте для себя серию портативных сканеров от GreenValley International</p>
+            <h1 class="hero__title title">Ручные лазерные сканеры LiGrip</h1>
+
+            <div class="buttons-grid">
+
+              <a href="#" class="button button--icon button--mod">
+                <span class="button__icon">
+                  <svg width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M3.40479 3.95238V1.7619C3.40479 1.34133 3.74612 1 4.16669 1H12.5476L15.5953 4.04762V16.2381C15.5953 16.6587 15.2539 17 14.8334 17H4.16669C3.74612 17 3.40479 16.6587 3.40479 16.2381V15"
+                      stroke="currentColor" stroke-width="2" stroke-miterlimit="10" />
+                    <path d="M15.4048 5H11.4048V1" stroke="currentColor" stroke-width="2" stroke-miterlimit="10" />
+                    <path
+                      d="M1.40479 6.55416V12.4462C1.40479 12.8721 1.85111 13.1382 2.2081 12.9247L7.13762 9.9785C7.49384 9.76539 7.49384 9.23421 7.13762 9.02111L2.2081 6.07487C1.85111 5.86216 1.40479 6.12795 1.40479 6.55416Z"
+                      stroke="currentColor" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round" />
+                  </svg>
+                </span>
+
+
+                <span>Смотреть брошюру</span>
+              </a>
+
+              <a href="#" class="button button--icon button--mod">
+                <span class="button__icon">
+                  <svg width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M3.40479 3.95238V1.7619C3.40479 1.34133 3.74612 1 4.16669 1H12.5476L15.5953 4.04762V16.2381C15.5953 16.6587 15.2539 17 14.8334 17H4.16669C3.74612 17 3.40479 16.6587 3.40479 16.2381V15"
+                      stroke="currentColor" stroke-width="2" stroke-miterlimit="10" />
+                    <path d="M15.4048 5H11.4048V1" stroke="currentColor" stroke-width="2" stroke-miterlimit="10" />
+                    <path d="M7.18256 10V6H3.62701V10H1.40479L5.40479 14L9.40479 10H7.18256Z" stroke="currentColor"
+                      stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round" />
+                  </svg>
+                </span>
+                <span>Документация</span>
+              </a>
+            </div>
+          </div>
+          <div class="hero__column hero__column-right">
+            <img class="hero__image" src="./img/hero/1.png" alt="фото" loading="lazy">
+          </div>
+        </div>
+
+
+
+      </div>
+
+    </section>
+
+    <!-- Галерея  -->
+    <section class="gallery section" id="anchor-gallery">
+
+      <header class="gallery__header">
+        <div class="wrapper">
+
+          <div class="gallery__header-grid">
+            <div class="gallery__header-column">
+              <span class="label">Галерея</span>
+              <h2 class="gallery__title title">LiGrip – это новая серия лазерных сканеров GreenValley International</h2>
+            </div>
+            <div class="gallery__header-column">
+
+              <div class="swiper-navigation-group">
+                <div class="swiper-pagination position-reset"></div>
+
+                <div class="swiper-button-group">
+                  <div class="swiper-button position-reset swiper-button-prev">
+                    <svg width="15" height="26" viewBox="0 0 15 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M14 1L2 13L14 25" stroke="#F05000" stroke-width="2" />
+                    </svg>
+
+                  </div>
+                  <div class="swiper-button position-reset swiper-button-next">
+                    <svg width="15" height="26" viewBox="0 0 15 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1 1L13 13L1 25" stroke="#F05000" stroke-width="2" />
+                    </svg>
+
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="gallery__slider">
+
+        <div class="swiper">
+
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <a class="gallery__item" href="./img/gallery/1.jpg" data-fslightbox="collection-1">
+                <img src="./img/gallery/1.jpg" alt="фото" loading="lazy">
+              </a>
+            </div>
+
+            <div class="swiper-slide">
+              <!-- <a class="gallery__item" href="./img/gallery/2.jpg" data-fslightbox="collection-1">
+                <img src="./img/gallery/2.jpg" alt="фото" loading="lazy">
+              </a> -->
+
+              <div class="gallery__youtube">
+                <a data-fslightbox="html5-youtube-videos" href="https://www.youtube.com/embed/DZcbcZZLCY4">
+                  <img class="img" src="https://i.ytimg.com/vi/DZcbcZZLCY4/maxresdefault.jpg"
+                    alt="Heroes Tonight - Fullscreen Lightbox">
+                    <div class="gallery__navigation">
+
+                      <!-- декоративная кнопка  -->
+                      <div class="gallery__decorate-button">
+                        <svg width="20" height="26" viewBox="0 0 20 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M1 3.74164V22.2596C1 23.5979 2.33898 24.4345 3.40993 23.7635L18.1985 14.5038C19.2672 13.8341 19.2672 12.1647 18.1985 11.4949L3.40993 2.23529C2.33898 1.56678 1 2.40212 1 3.74164Z"
+                            stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round" />
+                        </svg>
+
+                      </div>
+
+                      <span class="gallery__label">Смотреть<br>видео</span>
+                    </div>
+                </a>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <!-- <a class="gallery__item" href="./img/gallery/3.jpg" data-fslightbox="collection-1">
+                <img src="./img/gallery/3.jpg" alt="фото" loading="lazy">
+              </a> -->
+              <div class="gallery__local-video">
+                <a data-poster="./img/gallery/3.jpg" data-fslightbox="html5-demo-videos" href="./video/video.mp4">
+                  <img class="img" src="./img/gallery/3.jpg" alt="Название видео">
+
+                  <div class="gallery__navigation">
+
+                  <!-- декоративная кнопка  -->
+                  <div class="gallery__decorate-button">
+                    <svg width="20" height="26" viewBox="0 0 20 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M1 3.74164V22.2596C1 23.5979 2.33898 24.4345 3.40993 23.7635L18.1985 14.5038C19.2672 13.8341 19.2672 12.1647 18.1985 11.4949L3.40993 2.23529C2.33898 1.56678 1 2.40212 1 3.74164Z"
+                        stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round" />
+                    </svg>
+
+                  </div>
+
+                  <span class="gallery__label">Смотреть<br>видео</span>
+                </div>
+                </a>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <a class="gallery__item" href="./img/gallery/1.jpg" data-fslightbox="collection-1">
+                <img src="./img/gallery/1.jpg" alt="фото" loading="lazy">
+              </a>
+            </div>
+
+            <div class="swiper-slide">
+              <a class="gallery__item" href="./img/gallery/2.jpg" data-fslightbox="collection-1">
+                <img src="./img/gallery/2.jpg" alt="фото" loading="lazy">
+              </a>
+            </div>
+
+            <div class="swiper-slide">
+              <a class="gallery__item" href="./img/gallery/3.jpg" data-fslightbox="collection-1">
+                <img src="./img/gallery/3.jpg" alt="фото" loading="lazy">
+              </a>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Обзор оборудования  -->
+    <section class="overview section" id="anchor-overview">
+      <div class="wrapper">
+
+        <div class="overview__grid">
+
+          <div class="overview__column overview__column--left">
+            <span class="label">Обзор оборудования</span>
+            <h2 class="title">Серия LiGrip – универсальные лазерные 3D-сканеры</h2>
+            <p class="text">LiGrip – новая серия мобильных лазерных 3D-сканеров компании GreenValley International.
+              Благодаря
+              небольшому размеру и малому весу они идеально подходят для выполнения съемок в самых разных условиях.
+              Сочетание высокопроизводительного измерительного модуля Hesai с полнокруговой фотокамерой и
+              интеллектуальным алгоритмом SLAM дает возможность получить детальную и полную информацию об объекте
+              съемки в требуемой системе координат с минимальными усилиями и в максимально короткие сроки.</p>
+
+            <ul class="card-grid list-reset">
+
+              <li class="card-grid__column">
+                <article class="announce-card">
+                  <div class="announce-card__image">
+                    <img src="./img/announce-card/1.png" alt="LiGrip H120">
+                  </div>
+                  <div class="announce-card__details">
+                    <h3 class="announce-card__title">LiGrip H120</h3>
+                    <ul class="announce-card__specs cust-list">
+                      <li class="announce-card__spec">Скорость сканирования: 320 000 точек/сек.</li>
+                      <li class="announce-card__spec">Диапазон сканирования: до 120 метров</li>
+                      <li class="announce-card__spec">Разрешение фото: 6080×3040</li>
+                      <li class="announce-card__spec">Относительная точность: ≤3 см</li>
+                      <li class="announce-card__spec">Объем памяти: 256 ГБ</li>
+                    </ul>
+                    <div class="announce-card__actions buttons-grid">
+                      <a class="button button--icon" href="#">
+                        <span class="button__icon">
+                          <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                              d="M17 9C17 4.58172 13.4183 1 9 1C4.58172 1 0.999999 4.58172 1 9C1 13.4183 4.58172 17 9 17C13.4183 17 17 13.4183 17 9Z"
+                              stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round" />
+                            <path d="M4.64868 9L13.3508 8.99999" stroke="white" stroke-width="2" stroke-miterlimit="10"
+                              stroke-linejoin="round" />
+                            <path d="M8.99975 4.64893L8.99974 13.3511" stroke="white" stroke-width="2"
+                              stroke-miterlimit="10" stroke-linejoin="round" />
+                          </svg>
+                        </span>
+
+                        <span>Заказать сканер</span></a>
+                      <a class="button button--icon button--mod" href="#">
+                        <span class="button__icon">
+                          <svg width="17" height="18" viewBox="0 0 17 18" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3 5H9" stroke="#F05000" stroke-width="2" />
+                            <path d="M3 9H9" stroke="#F05000" stroke-width="2" />
+                            <path d="M3 13H9" stroke="#F05000" stroke-width="2" />
+                            <path d="M0 5H2" stroke="#F05000" stroke-width="2" />
+                            <path d="M0 9H2" stroke="#F05000" stroke-width="2" />
+                            <path d="M0 13H2" stroke="#F05000" stroke-width="2" />
+                            <path
+                              d="M4 2.95238V1.7619C4 1.34133 4.336 1 4.75 1H13L16 4.04762V16.2381C16 16.6587 15.664 17 15.25 17H4.75C4.336 17 4 16.6587 4 16.2381V15"
+                              stroke="#F05000" stroke-width="2" stroke-miterlimit="10" />
+                            <path d="M16 5H12V1" stroke="#F05000" stroke-width="2" stroke-miterlimit="10" />
+                          </svg>
+                        </span>
+
+                        <span>Все характеристики</span></a>
+                    </div>
+                  </div>
+                </article>
+
+              </li>
+              <li class="card-grid__column">
+                <article class="announce-card">
+                  <div class="announce-card__image">
+                    <img src="./img/announce-card/2.png" alt="LiGrip H120">
+                  </div>
+                  <div class="announce-card__details">
+                    <h3 class="announce-card__title">LiGrip H300</h3>
+                    <ul class="announce-card__specs cust-list">
+                      <li class="announce-card__spec">Скорость сканирования: 640 000 точек/сек.</li>
+                      <li class="announce-card__spec">Диапазон сканирования: до 300 метров</li>
+                      <li class="announce-card__spec">Разрешение фото: 6528*3264</li>
+                      <li class="announce-card__spec">Относительная точность: ≤1 см</li>
+                      <li class="announce-card__spec">Объем памяти: 512 ГБ</li>
+
+                    </ul>
+                    <div class="announce-card__actions buttons-grid">
+                      <a class="button button--icon" href="#">
+                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M17 9C17 4.58172 13.4183 1 9 1C4.58172 1 0.999999 4.58172 1 9C1 13.4183 4.58172 17 9 17C13.4183 17 17 13.4183 17 9Z"
+                            stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round" />
+                          <path d="M4.64868 9L13.3508 8.99999" stroke="white" stroke-width="2" stroke-miterlimit="10"
+                            stroke-linejoin="round" />
+                          <path d="M8.99975 4.64893L8.99974 13.3511" stroke="white" stroke-width="2"
+                            stroke-miterlimit="10" stroke-linejoin="round" />
+                        </svg>
+                        <span>Заказать сканер</span></a>
+                      <a class="button button--icon button--mod" href="#">
+
+                        <svg width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M3 5H9" stroke="#F05000" stroke-width="2" />
+                          <path d="M3 9H9" stroke="#F05000" stroke-width="2" />
+                          <path d="M3 13H9" stroke="#F05000" stroke-width="2" />
+                          <path d="M0 5H2" stroke="#F05000" stroke-width="2" />
+                          <path d="M0 9H2" stroke="#F05000" stroke-width="2" />
+                          <path d="M0 13H2" stroke="#F05000" stroke-width="2" />
+                          <path
+                            d="M4 2.95238V1.7619C4 1.34133 4.336 1 4.75 1H13L16 4.04762V16.2381C16 16.6587 15.664 17 15.25 17H4.75C4.336 17 4 16.6587 4 16.2381V15"
+                            stroke="#F05000" stroke-width="2" stroke-miterlimit="10" />
+                          <path d="M16 5H12V1" stroke="#F05000" stroke-width="2" stroke-miterlimit="10" />
+                        </svg>
+
+                        <span>Все характеристики</span></a>
+                    </div>
+                  </div>
+                </article>
+              </li>
+            </ul>
+          </div>
+
+          <div class="overview__column overview__column--right">
+            <div class="advantages">
+              <ul class="advantages__list list-reset">
+                <li class="advantages__item">
+                  <span class="advantages__icon">
+                    <svg width="36" height="45" viewBox="0 0 36 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M18 43.987C18.944 43.705 35 36.25 35 29C35 21.484 35 16.733 35 8C30.278 8 19.662 3.623 18.009 1H17.99M18 43.987C17.056 43.705 1 36.25 1 29C1 21.484 1 16.733 1 8C5.722 8 16.338 3.623 17.99 1M18 43.987L17.99 1"
+                        stroke="#F05000" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    </svg>
+
+                  </span>
+                  <div class="advantages__content">
+                    <b class="advantages__title">Надежный</b>
+                    <p class="advantages__description">
+                      Корпус измерительного модуля выполнен из легкосплавного металла, что дает дополнительную защиту
+                      при
+                      эксплуатации в неблагоприятных условиях, в том числе и на промышленных предприятиях.
+                    </p>
+                  </div>
+                </li>
+                <li class="advantages__item">
+                  <span class="advantages__icon">
+                    <svg width="44" height="45" viewBox="0 0 44 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M24 19C24.529 24.935 26.138 35.387 29 41C29.235 41.462 28.991 42.065 28.62 42.334C27.17 43.383 25.202 44 23 44H21C18.798 44 16.83 43.383 15.38 42.334C15.009 42.065 14.765 41.462 15 41C17.862 35.387 19.47 24.935 20 19"
+                        stroke="#F05000" stroke-width="2" stroke-miterlimit="10" />
+                      <path d="M12 22.022C7.118 17.14 7.118 9.22499 12 4.34399" stroke="#F05000" stroke-width="2"
+                        stroke-miterlimit="10" />
+                      <path d="M6.112 25.684C-0.704 18.868 -0.704 7.817 6.112 1" stroke="#F05000" stroke-width="2"
+                        stroke-miterlimit="10" />
+                      <path d="M32 22.022C36.882 17.14 36.882 9.22499 32 4.34399" stroke="#F05000" stroke-width="2"
+                        stroke-miterlimit="10" />
+                      <path d="M37.8879 25.684C44.7039 18.868 44.7039 7.817 37.8879 1" stroke="#F05000" stroke-width="2"
+                        stroke-miterlimit="10" />
+                      <path
+                        d="M21.999 19C25.3127 19 27.999 16.3137 27.999 13C27.999 9.68629 25.3127 7 21.999 7C18.6853 7 15.999 9.68629 15.999 13C15.999 16.3137 18.6853 19 21.999 19Z"
+                        stroke="#F05000" stroke-width="2" stroke-miterlimit="10" />
+                    </svg>
+
+                  </span>
+                  <div class="advantages__content">
+                    <b class="advantages__title">Дальнобойный</b>
+                    <p class="advantages__description">
+                      Расширенный диапазон измеряемых расстояний обеспечивает надежное определение труднодоступных или
+                      опасных объектов на расстояниях до 300 метров при работе со сканером LiGrip H300.
+                    </p>
+                  </div>
+                </li>
+                <li class="advantages__item">
+                  <span class="advantages__icon">
+                    <svg width="48" height="44" viewBox="0 0 48 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M44 24.8569V20.8569H40" stroke="#F05000" stroke-width="2" stroke-miterlimit="10"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                      <path d="M26 34.8569L28 36.8569L44 20.8569" stroke="#F05000" stroke-width="2"
+                        stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                      <path d="M14 22.8569L21 29.8569" stroke="#F05000" stroke-width="2" stroke-miterlimit="10"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                      <path d="M35 24.8569V20.8569H31" stroke="#F05000" stroke-width="2" stroke-miterlimit="10"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                      <path d="M5 22.8569L19 36.8569L35 20.8569" stroke="#F05000" stroke-width="2"
+                        stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                      <path d="M39 31.8569H43L47 42.8569H1L5 31.8569H9" stroke="#F05000" stroke-width="2"
+                        stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                      <path
+                        d="M23 1C22.135 5.322 17 8.80099 17 13.77C17 17.132 19.686 19.857 23 19.857C26.313 19.857 29 17.132 29 13.77C29 8.80099 23.865 5.322 23 1Z"
+                        stroke="#F05000" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round" />
+                    </svg>
+
+                  </span>
+                  <div class="advantages__content">
+                    <b class="advantages__title">Защищенный</b>
+                    <p class="advantages__description">
+                      Благодаря высокой степени защищенности IP54 сканеры LiGrip работают даже под дождем и в запыленных
+                      помещениях.
+                    </p>
+                  </div>
+                </li>
+                <li class="advantages__item">
+                  <span class="advantages__icon">
+                    <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M13.2311 37.5217C17.5908 37.5147 23.6141 37.5451 27.9833 37.5382" stroke="#F05000"
+                        stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round" />
+                      <path
+                        d="M35.7933 37.5217H41C41 37.5217 41 33.7765 41 32.3043C41 30.2721 38.6136 27.3043 30.5866 27.0869C27.2162 23.8826 24.1876 21.8695 20.9031 21.8695C17.6186 21.8695 15.7407 21.8695 14.0988 21.8695C10.4828 21.8695 8.40707 24.4782 4.71554 27.0869C3.0737 27.0869 2.98693 27.0869 1.94993 27.0869C1.08562 29.3382 0.757597 33.1243 1.18975 34.8573C1.6219 36.5886 2.73874 37.5217 4.55327 37.5217C4.6791 37.5217 5.03749 37.5217 5.42105 37.5217"
+                        stroke="#F05000" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round" />
+                      <path d="M27.9834 28.1331L26.2478 28.8261H12.3633L9.76001 26.2174" stroke="#F05000"
+                        stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round" />
+                      <path
+                        d="M31.8884 41C34.0451 41 35.7934 39.2481 35.7934 37.087C35.7934 34.9259 34.0451 33.174 31.8884 33.174C29.7317 33.174 27.9834 34.9259 27.9834 37.087C27.9834 39.2481 29.7317 41 31.8884 41Z"
+                        stroke="#F05000" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round" />
+                      <path
+                        d="M9.32603 41C11.4827 41 13.231 39.2481 13.231 37.087C13.231 34.9259 11.4827 33.174 9.32603 33.174C7.16935 33.174 5.42102 34.9259 5.42102 37.087C5.42102 39.2481 7.16935 41 9.32603 41Z"
+                        stroke="#F05000" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round" />
+                      <path d="M21.0411 19.2608V14.0435" stroke="#F05000" stroke-width="2" stroke-miterlimit="10"
+                        stroke-linejoin="round" />
+                      <path d="M24.5123 4.47826L21.0412 1L17.5701 4.47826" stroke="#F05000" stroke-width="2"
+                        stroke-miterlimit="10" stroke-linejoin="round" />
+                      <path d="M28.8512 10.5652H24.5123V14.0434" stroke="#F05000" stroke-width="2"
+                        stroke-miterlimit="10" stroke-linejoin="round" />
+                      <path d="M13.2311 10.5652H17.57V14.0434" stroke="#F05000" stroke-width="2" stroke-miterlimit="10"
+                        stroke-linejoin="round" />
+                      <path d="M31.4546 14.0434L34.9257 10.5652L31.4546 7.08691" stroke="#F05000" stroke-width="2"
+                        stroke-miterlimit="10" stroke-linejoin="round" />
+                      <path d="M10.6277 14.0434L7.15662 10.5652L10.6277 7.08691" stroke="#F05000" stroke-width="2"
+                        stroke-miterlimit="10" stroke-linejoin="round" />
+                      <path d="M21.0411 1.86951V12.3043" stroke="#F05000" stroke-width="2" stroke-miterlimit="10"
+                        stroke-linejoin="round" />
+                      <path d="M8.02454 10.5652H11.4957" stroke="#F05000" stroke-width="2" stroke-miterlimit="10"
+                        stroke-linejoin="round" />
+                      <path d="M34.0578 10.5652H30.5867" stroke="#F05000" stroke-width="2" stroke-miterlimit="10"
+                        stroke-linejoin="round" />
+                      <path d="M17.5701 15.7826V18.3913" stroke="#F05000" stroke-width="2" stroke-miterlimit="10"
+                        stroke-linejoin="round" />
+                      <path d="M24.5123 15.7826V18.3913" stroke="#F05000" stroke-width="2" stroke-miterlimit="10"
+                        stroke-linejoin="round" />
+                    </svg>
+
+                  </span>
+                  <div class="advantages__content">
+                    <b class="advantages__title">Многофункциональный</b>
+                    <p class="advantages__description">
+                      С помощью предлагаемых аксессуаров сканер LiGrip можно закрепить на БПЛА, затем быстро снять и
+                      установить на автомобиль поместить на рюкзак или же просто выполнить съемку с руки.
+                    </p>
+                  </div>
+                </li>
+                <li class="advantages__item">
+                  <span class="advantages__icon">
+                    <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M41 1H1V41H41V1Z" stroke="#F05000" stroke-width="2" stroke-miterlimit="10"
+                        stroke-linejoin="round" />
+                      <path d="M4 8.53845H40.3636" stroke="#F05000" stroke-width="2" stroke-miterlimit="10"
+                        stroke-linejoin="round" />
+                      <path d="M4 4.76929H5.81818" stroke="#F05000" stroke-width="2" stroke-miterlimit="10"
+                        stroke-linejoin="round" />
+                      <path d="M6.72729 4.76929H8.54548" stroke="#F05000" stroke-width="2" stroke-miterlimit="10"
+                        stroke-linejoin="round" />
+                      <path d="M9.45447 4.76929H11.2726" stroke="#F05000" stroke-width="2" stroke-miterlimit="10"
+                        stroke-linejoin="round" />
+                      <path d="M15.5455 28.8461L10.0909 24.2307L15.5455 19.6154" stroke="#F05000" stroke-width="2"
+                        stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                      <path d="M26.4546 28.8461L31.9091 24.2307L26.4546 19.6154" stroke="#F05000" stroke-width="2"
+                        stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                      <path d="M23.7273 16.8462L18.2727 31.6154" stroke="#F05000" stroke-width="2"
+                        stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+
+                  </span>
+                  <div class="advantages__content">
+                    <b class="advantages__title">Универсальный</b>
+                    <p class="advantages__description">
+                      Независимо от того, где производится съемка: на улице или в помещении (в том числе и в шахте),
+                      LiGrip предоставляет надежные и точные результаты, благодаря различным сценариям обработки
+                      полученных данных: SLAM, PPK+SLAM.
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Оставьте заявку  -->
+    <section class="feedback section" id="anchor-feedback-1">
+      <div class="wrapper">
+        <div class="feedback__grid">
+          <div class="feedback__grid-column feedback__grid-column--left">
+            <p class="label">
+              Отправьте простую форму и мы вышлем техническую документацию и примеры данных
+            </p>
+            <h2 class="title">Ознакомьтесь с документацией LiGrip</h2>
+
+            <form class="form" action="#" method="post">
+
+              <div class="form__body">
+                <div class="form__grid">
+                  <div class="form__column">
+                    <input type="text" class="feedback__input" name="user-name" placeholder="Ваше имя" required>
+                  </div>
+                  <div class="form__column">
+                    <input type="tel" class="feedback__input" name="user-phone" placeholder="Телефон" required>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form__footer">
+                <div class="form__check">
+                  <input type="checkbox" class="visually-hidden" id="user-agreement-1" name="user-agreement" required>
+                  <label for="user-agreement-1">
+                    Я выражаю свое согласие с Политикой конфиденциальности и разрешаю<br>
+                    обработку своих персональных данных.
+                  </label>
+                </div>
+                <button type="submit" class="form__button button button--icon">
+                  <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9.93137 14.2245L15.164 16.152L19 1.5L1 10.736L6.5 13" stroke="white" stroke-width="2"
+                      stroke-miterlimit="10" stroke-linejoin="round" />
+                    <path d="M6.89013 19.5L6 13L13.0209 7.97974L6.89013 19.5Z" stroke="white" stroke-width="2"
+                      stroke-miterlimit="10" stroke-linejoin="round" />
+                  </svg>
+
+                  <span>Отправить</span></button>
+              </div>
+            </form>
+
+          </div>
+          <div class="feedback__grid-column feedback__grid-column--right">
+            <div class="feedback__image">
+              <img src="./img/feedback/1.jpg" alt="LiGrip Documentation">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Где необходим  -->
+    <section class="applications section section--black" id="anchor-applications">
+      <div class="wrapper">
+        <p class="label">Где необходим?</p>
+        <h2 class="title">Области применения LiGrip</h2>
+        <ul class="applications__list list-reset">
+          <li class="applications__item">
+            <img src="./img/applications/1.jpg" alt="Вычисление объёмов материалов" class="applications__image">
+            <p class="applications__description">Вычисление объёмов материалов</p>
+          </li>
+          <li class="applications__item">
+            <img src="./img/applications/2.jpg" alt="Съёмка объектов энергетики" class="applications__image">
+            <p class="applications__description">Съёмка объектов энергетики</p>
+          </li>
+          <li class="applications__item">
+            <img src="./img/applications/3.jpg" alt="Обмерные планы внутренних помещений" class="applications__image">
+            <p class="applications__description">Обмерные планы внутренних помещений</p>
+          </li>
+          <li class="applications__item">
+            <img src="./img/applications/4.jpg" alt="Маршейдерские замеры" class="applications__image">
+            <p class="applications__description">Маршейдерские замеры</p>
+          </li>
+          <li class="applications__item">
+            <img src="./img/applications/5.jpg" alt="Городская инфраструктура" class="applications__image">
+            <p class="applications__description">Городская инфраструктура</p>
+          </li>
+          <li class="applications__item">
+            <img src="./img/applications/6.jpg" alt="Инвентаризация дорог, мостов, тоннелей"
+              class="applications__image">
+            <p class="applications__description">Инвентаризация дорог, мостов, тоннелей</p>
+          </li>
+          <li class="applications__item">
+            <img src="./img/applications/7.jpg" alt="BIM Моделирование" class="applications__image">
+            <p class="applications__description">BIM Моделирование</p>
+          </li>
+          <li class="applications__item">
+            <img src="./img/applications/8.jpg" alt="Подеревная съёмка" class="applications__image">
+            <p class="applications__description">Подеревная съёмка</p>
+          </li>
+          <li class="applications__item">
+            <img src="./img/applications/9.jpg" alt="Цифровые ГИС" class="applications__image">
+            <p class="applications__description">Цифровые ГИС</p>
+          </li>
+          <li class="applications__item">
+            <img src="./img/applications/10.jpg" alt="Оценка последствий чрезвычайных происшествий"
+              class="applications__image">
+            <p class="applications__description">Оценка последствий чрезвычайных происшествий</p>
+          </li>
+          <li class="applications__item">
+            <img src="./img/applications/11.jpg" alt="Топография и картографирование" class="applications__image">
+            <p class="applications__description">Топография и картографирование</p>
+          </li>
+          <li class="applications__item">
+            <img src="./img/applications/12.jpg" alt="Археология" class="applications__image">
+            <p class="applications__description">Археология</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Оставьте заявку 2 -->
+    <section class="feedback section" id="anchor-feedback-2">
+      <div class="wrapper">
+        <div class="feedback__grid">
+          <div class="feedback__grid-column feedback__grid-column--left">
+            <p class="label">
+              Заполните простую форму и наши специалисты свяжутся с вами в ближайшее время
+            </p>
+            <h2 class="title">У Вас уникальная задача ?<br>
+              Обратитесь к нам !</h2>
+
+            <form class="form" action="#" method="post">
+
+              <div class="form__body">
+                <div class="form__grid">
+                  <div class="form__column">
+                    <input type="text" class="feedback__input" name="user-name" placeholder="Ваше имя" required>
+                  </div>
+                  <div class="form__column">
+                    <input type="tel" class="feedback__input" name="user-phone" placeholder="Телефон" required>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form__footer">
+                <div class="form__check">
+                  <input type="checkbox" class="visually-hidden" id="user-agreement-2" name="user-agreement" required>
+                  <label for="user-agreement-2">
+                    Я выражаю свое согласие с Политикой конфиденциальности и разрешаю<br>
+                    обработку своих персональных данных.
+                  </label>
+                </div>
+                <button type="submit" class="form__button button button--icon">
+                  <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9.93137 14.2245L15.164 16.152L19 1.5L1 10.736L6.5 13" stroke="white" stroke-width="2"
+                      stroke-miterlimit="10" stroke-linejoin="round" />
+                    <path d="M6.89013 19.5L6 13L13.0209 7.97974L6.89013 19.5Z" stroke="white" stroke-width="2"
+                      stroke-miterlimit="10" stroke-linejoin="round" />
+                  </svg>
+
+                  <span>Отправить</span></button>
+              </div>
+            </form>
+
+          </div>
+          <div class="feedback__grid-column feedback__grid-column--right">
+            <div class="feedback__image">
+              <img src="./img/feedback/2.jpg" alt="LiGrip Documentation">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Почему выбирают нас  -->
+    <section class="why-us section" id="anchor-why-us">
+      <div class="wrapper">
+        <p class="label">Выбирайте нас</p>
+        <h2 class="title">Почему стоит выбрать АртГео?</h2>
+        <div class="why-us__grid">
+          <div class="why-us__column">
+            <p class="text">
+              Компания АртГео с 2010 года занимается поставкой, внедрением, обучением и технической поддержкой
+              воздушных,
+              наземных, мобильных, промышленных лазерных сканирующих систем, дальномеров и программного обеспечения для
+              сбора и обработки данных сканирования
+            </p>
+
+            <div class="features">
+              <ul class="features__list list-reset">
+                <li class="features__item">
+                  <div class="features__icon">
+                    <svg width="41" height="42" viewBox="0 0 41 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M16.6302 34.2923C16.8314 34.3538 17.0345 34.4116 17.2384 34.4648L17.9668 39.5328H23.7938L24.5221 34.4648C25.8551 34.1189 27.1124 33.5896 28.2687 32.9015L32.3394 35.9657L36.4602 31.8143L33.4192 27.7124C34.102 26.5463 34.6265 25.2802 34.9707 23.9371L40.0001 23.2031V17.3315L34.9707 16.5975C34.6274 15.2544 34.102 13.9874 33.4192 12.8222L36.4602 8.72032L32.3394 4.56888L28.2687 7.63315C27.1115 6.94507 25.8551 6.41661 24.5221 6.06981L23.7938 1H17.9668L17.2384 6.06796C15.9055 6.41384 14.6482 6.9423 13.4919 7.6313L9.42116 4.56703L5.30128 8.71848L8.34226 12.8204C7.65941 13.9865 7.135 15.2525 6.79084 16.5957L1.7605 17.3305V23.2022L6.7899 23.9362C6.90189 24.372 7.0321 24.7995 7.1805 25.2179"
+                        stroke="#F05000" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                      <path
+                        d="M6.22991 40.1942L18.0678 28.2655C18.2809 28.0508 18.5932 27.9885 18.8809 28.0811C21.5868 28.9545 24.6677 28.3123 26.8155 26.1499C28.7293 24.2214 29.4431 21.5443 28.9615 19.0562C28.8395 18.4268 28.0802 18.1773 27.6304 18.6305L24.0459 22.2425C23.74 22.5507 23.2438 22.5507 22.9379 22.2425L19.6138 18.8938C19.3079 18.5855 19.3079 18.0855 19.6138 17.7773L23.1992 14.1644C23.649 13.7111 23.4013 12.9451 22.7767 12.8231C20.3066 12.3386 17.6508 13.0579 15.737 14.9855C13.5901 17.1488 12.9528 20.2544 13.8204 22.9801C13.9124 23.2691 13.8505 23.5847 13.6375 23.7994L1.79962 35.728C0.733461 36.8033 0.733461 38.5455 1.79962 39.6208L2.36866 40.1942C3.43299 41.2685 5.16285 41.2685 6.22991 40.1942Z"
+                        stroke="#F05000" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round" />
+                    </svg>
+
+                  </div>
+                  <p class="features__text">Оказываем квалифицированную техническую поддержку</p>
+                </li>
+                <li class="features__item">
+                  <div class="features__icon">
+                    <svg width="40" height="42" viewBox="0 0 40 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M13.8086 1.30676L16.9936 8.8315C17.0669 9.00564 17.2313 9.12443 17.4187 9.13693L25.2283 9.69775C25.664 9.72901 25.8541 10.2702 25.5359 10.572L19.6484 16.1562C19.5194 16.2786 19.4637 16.4607 19.5025 16.6349L21.1578 24.1641C21.2506 24.5883 20.807 24.9268 20.4287 24.7187L13.5868 20.959C13.4374 20.8768 13.2571 20.8768 13.1078 20.959L6.2658 24.7187C5.88755 24.9259 5.4439 24.5883 5.53669 24.1641L7.19194 16.6349C7.23083 16.4607 7.17428 16.2786 7.04614 16.1562L1.15863 10.572C0.840476 10.2702 1.03045 9.72901 1.46614 9.69775L9.27585 9.13693C9.4632 9.12353 9.62666 9.00564 9.70089 8.8315L12.8859 1.30676C13.06 0.897747 13.6353 0.897747 13.8086 1.30676Z"
+                        stroke="#F05000" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                      <path
+                        d="M25.437 15.9206L27.5995 15.9009C27.7046 15.9 27.8001 15.8402 27.8469 15.7455L30.4673 10.4802C30.5777 10.2578 30.8985 10.2774 30.9816 10.5123L32.9391 16.0634C32.9745 16.1635 33.0619 16.2349 33.1653 16.2492L38.7568 17.0038C38.9989 17.0359 39.0864 17.3441 38.8982 17.5021L34.4255 21.2475C34.3495 21.3109 34.3124 21.411 34.3275 21.5092L35.1856 26.9942C35.2227 27.2345 34.9646 27.4068 34.7605 27.2782L30.0139 24.2713C29.9335 24.2204 29.8327 24.2142 29.747 24.2544L24.6698 26.6468C24.4515 26.7495 24.2156 26.5459 24.2828 26.3119L25.8037 20.9752C25.8311 20.8796 25.8064 20.776 25.7383 20.7028L24.3747 19.2391"
+                        stroke="#F05000" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                      <path
+                        d="M19.5847 28.0854L20.0328 29.8769C20.0531 29.9581 20.1167 30.0206 20.1971 30.0394L25.6941 31.3236C25.8814 31.3673 25.9282 31.6165 25.7683 31.7255L20.9704 35.0234C20.9059 35.0681 20.8697 35.1431 20.8741 35.2217L21.2152 40.7621C21.2276 40.9532 21.011 41.0702 20.8608 40.9532L16.4218 37.5115C16.3626 37.465 16.2839 37.4534 16.2132 37.4784L10.9416 39.3734C10.7631 39.4377 10.5926 39.26 10.6624 39.0814L12.6738 33.9161C12.7021 33.8429 12.6906 33.7598 12.642 33.6973L9.08221 29.0669C8.96379 28.9133 9.08314 28.6909 9.2758 28.7079L14.8964 29.1946C14.9786 29.2017 15.059 29.1615 15.1023 29.091L16.4942 26.8503"
+                        stroke="#F05000" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    </svg>
+
+                  </div>
+                  <p class="features__text">Качество и надежность поставляемых решений</p>
+                </li>
+                <li class="features__item">
+                  <div class="features__icon">
+                    <svg width="46" height="42" viewBox="0 0 46 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M11.534 25.846C10.738 25.946 9.886 26 9 26C4.582 26 1 24.657 1 23" stroke="#F05000"
+                        stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                      <path d="M20.125 16.982C20.413 16.994 20.704 17 21 17C25.418 17 29 15.657 29 14" stroke="#F05000"
+                        stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                      <path d="M6.68597 30.873C3.39597 30.5 1 29.355 1 28V23V18" stroke="#F05000" stroke-width="2"
+                        stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                      <path
+                        d="M21 7C25.4183 7 29 5.65685 29 4C29 2.34315 25.4183 1 21 1C16.5817 1 13 2.34315 13 4C13 5.65685 16.5817 7 21 7Z"
+                        stroke="#F05000" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                      <path d="M29 9C29 10.657 25.418 12 21 12C16.582 12 13 10.657 13 9" stroke="#F05000"
+                        stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                      <path
+                        d="M9 21C13.4183 21 17 19.6569 17 18C17 16.3431 13.4183 15 9 15C4.58172 15 1 16.3431 1 18C1 19.6569 4.58172 21 9 21Z"
+                        stroke="#F05000" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                      <path d="M13 4V12.167" stroke="#F05000" stroke-width="2" stroke-miterlimit="10"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                      <path d="M17 18V22.688" stroke="#F05000" stroke-width="2" stroke-miterlimit="10"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                      <path d="M29 18.563V14V4" stroke="#F05000" stroke-width="2" stroke-miterlimit="10"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                      <path d="M10 30V36.625L21 41V34.333L10 30Z" stroke="#F05000" stroke-width="2"
+                        stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                      <path d="M30 37.25L21 41" stroke="#F05000" stroke-width="2" stroke-miterlimit="10"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                      <path d="M37.356 27.5L44.9999 24.314V31L37.9999 33.917" stroke="#F05000" stroke-width="2"
+                        stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                      <path d="M21 34.314L29.235 30.884" stroke="#F05000" stroke-width="2" stroke-miterlimit="10"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                      <path d="M26.3101 23.207L33.9611 20.02L45.0001 24.314" stroke="#F05000" stroke-width="2"
+                        stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                      <path d="M10 30L18.303 26.542" stroke="#F05000" stroke-width="2" stroke-miterlimit="10"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                      <path
+                        d="M25.2751 22.8049L38.0001 27.7499V34.6669L30.0001 38.2499V31.1879L17.2791 26.1349L25.2751 22.8049Z"
+                        stroke="#F05000" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    </svg>
+
+                  </div>
+                  <p class="features__text">Оптимизируем Ваши затраты при приобретении у нас оборудования</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+
+          <div class="why-us__column">
+            <div class="partners">
+              <h3 class="partners__title">Наши партнеры в регионах</h3>
+              <ul class="partners__list partners__grid list-reset">
+                <li class="partners__item">
+                  <img src="./img/why-us/1.jpg" alt="АНДЕКС" class="partners__logo">
+                  <p class="partners__name">ООО «АНДЕКС»</p>
+                  <p class="partners__location">г. Санкт – Петербург</p>
+                </li>
+                <li class="partners__item">
+                  <img src="./img/why-us/2.jpg" alt="ГеоКонтинент" class="partners__logo">
+                  <p class="partners__name">ООО «ГеоКонтинент»</p>
+                  <p class="partners__location">г. Краснодар</p>
+                </li>
+                <li class="partners__item">
+                  <img src="./img/why-us/3.jpg" alt="ИнжГеоГрупп" class="partners__logo">
+                  <p class="partners__name">ООО «ИнжГеоГрупп»</p>
+                  <p class="partners__location">г. Омск</p>
+                </li>
+                <li class="partners__item">
+                  <img src="./img/why-us/4.jpg" alt="КПС" class="partners__logo">
+                  <p class="partners__name">ООО «КПС»</p>
+                  <p class="partners__location">г. Красноярск</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer" id="anchor-footer">
+    <div class="wrapper">
+      <div class="footer__grid">
+
+        <div class="footer__column">
+          <div class="footer__details">
+            <p class="label">
+              Вы можете обратиться любым удобным для Вас способом: обратиться в офис компании или заполнить простую
+              форму
+              и наш специалист свяжется с Вами в ближайшее время
+            </p>
+            <h2 class="title">У вас остались вопросы?</h2>
+            <div class="address-list">
+              <ul class="address-list__grid list-reset">
+                <li class="address-list__item address-list__item--mod">
+                  <span class="address-list__label">Адрес:</span>
+                  <address>Россия, 108814, г. Москва, п. Сосенское, ж/к Дубровка, ул. Рябиновая, д. 1, корп. 2, офис 1
+                  </address>
+                </li>
+                <li class="address-list__item">
+                  <span class="address-list__label">Телефон:</span>
+                  <a href="tel:+74957817888">+7 (495) 781-7888</a>
+                </li>
+                <li class="address-list__item">
+                  <span class="address-list__label">E-mail:</span>
+                  <a href="mailto:info@art-geo.ru">info@art-geo.ru</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__bottom">
+              <div class="footer__bottom-flex">
+
+                <div class="footer__logo">
+                  <a class="logotype" href="#">
+                    <svg width="136" height="64" viewBox="0 0 136 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M51.7981 20.5552C53.7905 18.8484 60.2742 11.8699 62.6629 13.8682C65.0575 15.8694 64.68 18.3377 67.0717 20.339C67.6585 19.9042 68.8307 19.0346 69.4168 18.6013C71.2073 19.7915 72.4418 23.9044 73.0279 23.4703C75.9906 23.791 72.444 26.5297 74.7899 24.7928C75.9928 26.4163 77.7826 27.6012 77.2101 29.2803C57.8849 46.1088 54.3856 51.1115 32.0541 63.8781C29.1072 64.8055 28.4618 60.2571 28.4175 56.5205C28.4333 57.7678 26.6277 55.3325 26.6435 56.5798C24.838 54.1453 23.0039 49.2191 24.7479 46.6682L51.7981 20.5552Z"
+                        fill="#FF9600" />
+                      <path
+                        d="M51.7982 20.5553C52.3437 20.0882 53.227 19.2254 54.2686 18.2597C53.1512 19.0384 52.2222 19.4972 51.7066 19.1548C48.7439 18.8379 51.0762 15.853 52.8353 14.5523C51.0455 13.3614 54.0075 13.6813 52.8068 12.0585C50.3994 8.80996 47.9927 5.56743 43.8443 4.86981C42.6534 4.48984 41.4369 1.62427 40.2362 0C33.1979 5.21299 30.2022 4.91035 25.5712 13.3711C21.5106 20.1491 11.8278 21.9092 8.00505 28.8944C6.84863 31.0083 1.50704 29.9322 3.3456 34.8614L5.10237 33.5592C5.1489 37.2929 1.58433 36.1657 0.427155 38.2766C1.52354 39.7597 2.11488 40.5677 2.22069 41.6423C1.47851 41.5935 -0.946143 42.2663 0.399387 42.2198L2.20418 44.6543C1.63385 46.3364 4.62209 42.7124 4.04876 44.39C4.65061 45.2032 5.8543 46.8268 6.4554 47.6378C7.05725 48.451 6.47117 48.8851 5.88508 49.3184C6.47117 48.8851 7.64409 48.0147 8.23018 47.5807C8.83203 48.3917 10.0327 50.013 10.6346 50.824C11.2364 51.6342 10.6503 52.0705 10.0612 52.5046C11.2672 54.1281 21.8003 47.5935 22.9882 47.9712L24.7473 46.6668L51.7982 20.5553Z"
+                        fill="#F05000" />
+                      <path
+                        d="M21.5991 23.1436L31.2301 39.9277H26.8364L24.8507 36.2857H14.178L12.2569 39.9277H8.31787L17.8229 23.1436H21.5991ZM23.1922 33.2249L19.5459 26.3958L15.7719 33.2249H23.1922Z"
+                        fill="white" />
+                      <path
+                        d="M46.9616 23.1436C47.778 23.1436 48.8857 23.239 49.6324 23.8562C50.5419 24.5749 50.6064 25.6149 50.6064 26.3966V30.1378C50.6064 30.5613 50.5779 31.8627 49.7307 32.6076C48.8857 33.357 47.2903 33.3878 46.8332 33.3878H36.3564V39.927H32.4519V23.1428H46.9616M36.3564 26.0076V30.5283H44.9452C45.598 30.5283 46.022 30.4637 46.2802 30.2669C46.7034 29.941 46.7034 29.4529 46.7034 29.1916V27.3391C46.7034 27.0777 46.7034 26.5896 46.2802 26.2682C46.022 26.0715 45.598 26.0069 44.9452 26.0069H36.3564V26.0076Z"
+                        fill="white" />
+                      <path d="M65.3645 39.9277H61.46V26.1999H53.7471V23.1436H73.0798V26.1999H65.3645V39.9277Z"
+                        fill="white" />
+                      <path d="M92.05 23.1436V26.1999H80.1414V39.9277H76.2361V23.1436H92.05Z" fill="white" />
+                      <path
+                        d="M112.451 23.1436V26.0076H99.1752V29.748H106.923V32.6076H99.1752V36.8684H112.617V39.9277H95.2744V23.1436H112.451Z"
+                        fill="white" />
+                      <path
+                        d="M115.304 27.1092C115.304 26.3966 115.304 24.8332 116.218 23.9576C117.029 23.1744 118.398 23.1436 119.467 23.1436H131.836C132.908 23.1436 134.277 23.1744 135.088 23.9576C136 24.8332 136 26.3966 136 27.1092V35.9575C136 36.6761 136 38.2381 135.088 39.1152C134.277 39.8954 132.908 39.9277 131.836 39.9277H119.467C118.398 39.9277 117.029 39.8954 116.218 39.1152C115.304 38.2381 115.304 36.6761 115.304 35.9575V27.1092ZM119.209 36.8684H132.094V26.1999H119.209V36.8684Z"
+                        fill="white" />
+                    </svg>
+
+
+                  </a>
+                </div>
+
+                <p class="footer__copyright">2023 &copy; <b>АРТГЕО</b>. Все права защищены.</p>
+
+                <div class="site-developers">
+                  <div class="site-developers__grid">
+                    <span>Создание сайта -</span>
+                    <a href="https://very-good.ru" target="_blank">Very-good</a>
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M4.98911 16.0929C4.98911 16.0929 5.86938 15.9924 7.5355 13.0845C7.5355 13.0845 7.57327 13.0337 7.6357 12.936C8.46246 16.9118 12.4421 16.2684 12.4421 16.2684L12.824 14.7267C10.1506 15.3278 10.116 12.0571 10.116 12.0571L14.2126 13.5234C14.5761 13.1091 14.8075 12.5948 14.905 12.0417C14.9439 13.3662 14.8284 14.7942 14.456 16.2684C14.456 16.2684 16.9321 15.2901 18.6449 16.9952C18.6449 16.9952 18.4812 14.0342 17.6251 10.9726C18.1161 10.6601 19.1658 10.1989 19.351 11.8314C19.5944 13.9748 22.3711 16.9449 24.9752 13.2599C24.9752 13.2599 23.3437 14.2376 22.4409 12.2074C21.5963 10.3081 21.2684 7.81848 18.9859 8.5493C20.2926 7.47621 21.515 5.73858 19.9758 4.12323C17.9236 1.96905 14.7241 4.54093 14.1606 5.0249C13.7918 4.77577 13.3937 4.58321 12.963 4.4615C12.963 4.4615 14.2829 6.80825 14.7508 10.1972C14.4513 9.3207 13.8238 8.51045 12.8586 7.99619C11.7097 7.38308 10.1831 7.49393 9.05264 8.31446C9.29185 6.26313 9.23572 3.5164 8.41525 0L4.43409 2.1559C4.43409 2.1559 7.5355 8.57273 4.7116 12.8342C4.7116 12.8342 1.1008 10.4778 3.36916 5.71516L1.05516 5.26375C1.05516 5.26375 -0.138297 6.72139 0.0133114 9.01157C0.189051 11.6583 1.89347 15.2393 4.98911 16.0929ZM18.4141 5.54316C19.3164 6.74368 17.9661 7.81963 16.7936 8.05276C16.7936 8.05276 16.5785 6.63511 15.7984 5.7123C15.7984 5.7123 17.5118 4.34208 18.4141 5.54316ZM12.4725 9.08471C13.2227 9.36127 13.6324 10.2755 13.4881 11.2332L10.4927 10.0532C10.927 9.2407 11.7422 8.81558 12.4725 9.08471ZM26.8386 12.4325H26.8889C26.4446 14.0868 25.6514 15.0301 24.6631 15.7164C22.8574 16.97 20.4967 16.2684 20.4967 16.2684C21.0292 17.8723 26.8386 20.8801 28.6437 15.5661C30.4488 10.2521 27.1858 6.6174 27.1858 6.6174C27.3537 8.81729 27.2876 10.4818 27.0405 11.7709C26.5642 11.8457 24.0377 12 25.1719 6.5174L22.5799 5.46431C22.5799 5.46431 21.2836 12.9845 26.8386 12.4325Z"
+                        fill="#FF9600" />
+                      <path
+                        d="M28.7129 20.1786C25.6351 19.3764 23.6673 20.4043 23.6673 20.4043C23.6673 20.4043 25.5191 21.0306 25.8433 24.2647C26.167 27.4983 22.9035 29.729 22.9035 29.729C22.9035 29.729 26.5143 30.4558 29.2223 29.2273C31.9302 27.9994 32 24.9915 32 24.5652C32 24.139 31.7912 20.9808 28.7129 20.1786ZM27.9339 26.9983C27.8793 27.0011 27.8258 26.9994 27.7718 26.996C28.2428 26.4703 28.5314 25.6423 28.4947 24.7218C28.4506 23.6002 27.937 22.6585 27.2388 22.2556C27.3982 22.1951 27.5666 22.1562 27.7424 22.1476C28.8278 22.0974 29.7505 23.1425 29.8035 24.4818C29.8565 25.8218 29.0198 26.9486 27.9339 26.9983ZM24.4196 24.651C24.4196 22.2225 22.5777 20.2535 20.3057 20.2535C20.0806 20.2535 19.8598 20.274 19.6452 20.3112C19.0498 18.7335 17.6192 17.6216 15.9484 17.6216C13.9172 17.6216 12.2411 19.2655 11.9898 21.3917C10.2282 21.7425 8.32234 22.955 7.68548 26.3823L9.8038 26.9091C9.8038 26.9091 10.2261 25.6332 11.3587 24.4853L11.4007 24.6155C11.4007 24.6155 11.6787 28.3754 8.86634 28.8268C6.05398 29.2782 4.35272 25.9315 5.22092 23.7133C6.08913 21.4945 7.85964 22.0837 7.85964 22.0837L11.2847 18.5992L10 18.0227C6.37766 16.6439 1.71452 19.2009 1.43648 24.803C1.15897 30.4055 6.95681 33.8277 10.9841 30.9701C13.1654 29.4222 13.5945 27.1463 13.53 25.3852C14.2015 25.94 15.0387 26.2697 15.9484 26.2697C16.1247 26.2697 16.2973 26.256 16.4672 26.2326C17.0616 27.8788 18.5556 29.0473 20.3057 29.0473C22.5777 29.0473 24.4196 27.0788 24.4196 24.651ZM16.8334 22.2934C16.7941 22.3602 16.7558 22.4276 16.719 22.4968C16.4578 22.891 16.0318 23.1487 15.5492 23.1487C15.1977 23.1487 14.8756 23.0122 14.6248 22.7853C14.9123 22.7379 15.2134 22.7059 15.5319 22.6979L15.428 21.57C15.428 21.57 14.9071 21.4003 14.1322 21.3151C14.2519 20.5843 14.8399 20.0283 15.5492 20.0283C16.345 20.0283 16.9902 20.7266 16.9902 21.5888C16.9902 21.8425 16.9331 22.0814 16.8334 22.2934ZM19.4202 25.9315C18.9911 25.9315 18.606 25.7292 18.339 25.4092C19.1002 24.7921 19.6505 23.887 19.854 22.8442C20.4479 23.0442 20.8786 23.6441 20.8786 24.3521C20.8786 25.2241 20.2254 25.9315 19.4202 25.9315Z"
+                        fill="#FF9600" />
+                    </svg>
+
+
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="footer__column footer__column--mod">
+          <div class="footer__map">
+            <!-- карта  -->
+            <div class="map">
+              <div class="map__content js-map" id="map"></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+  </footer>
+
+  <!-- Диалоговые окна  -->
+
+  <!-- Обратная связь  -->
+  <section class="modal" id="modal-call-back">
+    <div class="wrapper">
+
+      <div class="modal__body">
+
+        <span class="label">Если у Вас есть вопросы или предложения напишите нам и наши специалисты ответят в
+          ближайшее время</span>
+        <h2 class="title">Обратная связь</h2>
+
+        <div class="modal__form">
+          <form class="form" action="#" method="post">
+
+            <div class="form__body">
+              <div class="form__grid">
+
+                <div class="form__column">
+                  <input class="feedback__input" type="text" name="user-name" placeholder="Ваше имя" required>
+                </div>
+
+                <div class="form__column">
+                  <input class="feedback__input" type="tel" name="user-phone" placeholder="Телефон" required>
+                </div>
+
+                <div class="form__column">
+                  <input class="feedback__input" type="email" name="user-email" placeholder="E-mail">
+                </div>
+                <div class="form__column form__column--mod">
+                  <textarea class="feedback__input" name="user-message" placeholder="Сообщение"></textarea>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="form__footer">
+              <div class="form__check">
+                <input type="checkbox" class="visually-hidden" id="user-agreement-3" name="user-agreement" required>
+                <label for="user-agreement-3">
+                  Я выражаю свое согласие с Политикой конфиденциальности и разрешаю<br>
+                  обработку своих персональных данных.
+                </label>
+              </div>
+              <button type="submit" class="form__button button button--icon">
+                <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M9.93137 14.2245L15.164 16.152L19 1.5L1 10.736L6.5 13" stroke="white" stroke-width="2"
+                    stroke-miterlimit="10" stroke-linejoin="round" />
+                  <path d="M6.89013 19.5L6 13L13.0209 7.97974L6.89013 19.5Z" stroke="white" stroke-width="2"
+                    stroke-miterlimit="10" stroke-linejoin="round" />
+                </svg>
+                <span>Отправить</span></button>
+            </div>
+          </form>
+        </div>
+
+        <!-- Кнопка закрытия окна  -->
+        <button class="modal__close js-close-modal" type="button" title="Закрыть окно">
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1 1L17 17" stroke="white" stroke-width="2" />
+            <path d="M17 1L1 17" stroke="white" stroke-width="2" />
+          </svg>
+
+        </button>
+
+      </div>
+
+
+    </div>
+  </section>
+
+  <!-- Сообщение отправлено  -->
+  <section class="modal" id="modal-message">
+    <div class="wrapper">
+
+      <div class="modal__body">
+
+        <span class="label">Спасибо за обращение наши специалисты ответят в ближайшее время</span>
+        <h2 class="title">Сообщение отправлено</h2>
+        <br>
+        <button class="button button--icon">
+          <span class="button__icon">
+            <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1.5 1.5L17.5 17.5" stroke="white" stroke-width="2" />
+              <path d="M17.5 1.5L1.5 17.5" stroke="white" stroke-width="2" />
+            </svg>
+          </span>
+          <span>Закрыть</span></button>
+
+        <!-- Кнопка закрытия окна  -->
+        <button class="modal__close js-close-modal" type="button" title="Закрыть окно">
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1 1L17 17" stroke="white" stroke-width="2" />
+            <path d="M17 1L1 17" stroke="white" stroke-width="2" />
+          </svg>
+
+        </button>
+
+      </div>
+
+
+    </div>
+  </section>
+
+  <!-- Карта  -->
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=1dba075a-a65a-4b22-84a2-ebb26f26fe43&lang=ru_RU"
+    type="text/javascript" defer></script>
+
+  <!-- Скрипты и библиотеки -->
+  <script src="./libs/fslightbox.min.js"></script>
+  <script src="./libs/imask.js"></script>
+  <script src="./libs/swiper-bundle.min.js"></script>
+
+  <script src="./js/parts/swiper.js"></script>
+  <script src="./js/parts/form-validation.js"></script>
+
+  <script src="./js/parts/sticky-header.js"></script>
+  <script src="./js/parts/mobile-menu-and-button.js"></script>
+  <script src="./js/parts/modals.js"></script>
+  <script src="./js/main.js"></script>
+
+
+  <script src="./js/parts/map.js" defer></script>
+
+</body>
+
+</html>
