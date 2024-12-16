@@ -29,6 +29,12 @@ body {
   color: var(--dark-07);
 }
 
+p:not([class]) {
+  b {
+    color: var(--dark);
+  }
+}
+
 img {
   height: auto;
   max-width: 100%;
