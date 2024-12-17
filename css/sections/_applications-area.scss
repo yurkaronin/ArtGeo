@@ -3,5 +3,19 @@
     &:not(:last-of-type) {
       margin-bottom: 55px;
     }
+    .title {
+      margin-bottom: 14px;
+    }
+  }
+
+  @media (max-width: 767px) {
+    &__item {
+      &:not(:last-of-type) {
+        margin-bottom: 25px;
+      }
+      .title {
+        margin-bottom: 0;
+      }
+    }
   }
 }

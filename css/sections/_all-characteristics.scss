@@ -46,4 +46,11 @@
     font-size: 14px;
     color: var(--text);
   }
+
+  @media (max-width: 767px) {
+    &__item {
+      gap: 0;
+      grid-template-columns: 1fr;
+    }
+  }
 }

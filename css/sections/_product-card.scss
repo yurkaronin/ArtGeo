@@ -1,13 +1,14 @@
 .product-card {
-  margin-top: 70px;
+  margin-top: 37px;
   margin-bottom: 70px;
+
   &__grid {
     display: grid;
     gap: 32px;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     margin-top: 55px;
-    margin-bottom: 50px;
+    margin-bottom: 42px;
   }
 
   &__photo {
@@ -28,12 +29,36 @@
 
   .advantages__list {
     display: grid;
-    gap: 40px;
+    gap: 32px;
     grid-template-columns: repeat(2, 1fr);
-}
+  }
 
-.all-characteristics {
-  margin-top: 35px;
-  margin-bottom: 48px;
-}
+  .all-characteristics {
+    margin-top: 50px;
+    margin-bottom: 48px;
+  }
+
+  @media (max-width: 1380px) {
+    &__grid {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 40px;
+    }
+
+    &__photo {
+      order: -1;
+      max-width: max-content;
+      margin: 0 auto;
+    }
+  }
+
+  @media (max-width: 767px) {
+    margin-top: 20px;
+    margin-bottom: 40px;
+
+    &__grid {
+      margin-top: 16px;
+      margin-bottom: 42px;
+      gap: 16px;
+    }
+  }
 }

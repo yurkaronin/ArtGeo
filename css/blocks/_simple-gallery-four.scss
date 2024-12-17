@@ -1,5 +1,6 @@
 .simple-gallery-four {
-  margin-bottom: 40px;
+  margin-bottom: 44px;
+
   &__list {
     list-style: none;
     margin: 0;
@@ -14,6 +15,7 @@
   &__image {
     display: block;
   }
+
   figure {
     display: block;
     margin: 0;
@@ -24,9 +26,34 @@
     font-size: 16px;
     font-style: normal;
     margin-top: 14px;
+
     b {
       display: block;
       color: var(--dark);
+    }
+  }
+
+  @media (max-width: 1380px) {
+    &__list {
+      grid-template-columns: repeat(2, 1fr);
+      max-width: max-content;
+      margin: 0 auto;
+      gap: 24px 32px;
+    }
+
+    figcaption {
+      margin-top: 8px;
+    }
+  }
+
+  @media (max-width: 767px) {
+    &__list {
+      max-width: 100%;
+      gap: 16px;
+    }
+    figcaption {
+      font-size: 14px;
+      margin-top: 6px;
     }
   }
 }

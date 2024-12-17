@@ -23,4 +23,12 @@
   &__image {
     display: block;
   }
+
+  @media (max-width: 767px) {
+    &__list {
+      gap: 16px;
+      grid-template-columns: repeat(2, 1fr);
+      max-width: 100%;
+    }
+  }
 }

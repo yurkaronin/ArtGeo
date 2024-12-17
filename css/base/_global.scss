@@ -30,6 +30,8 @@ body {
 }
 
 p:not([class]) {
+  margin-block-start: 1.2em;
+  margin-block-end: 1.2em;
   b {
     color: var(--dark);
   }
@@ -107,4 +109,14 @@ svg * {
 
 .simplebar-scrollbar::before {
   background-color: var(--orange);
+}
+
+p + h1,
+p + h2,
+p + h3,
+p + h4,
+p + h5,
+p + h6,
+p + .title {
+  margin-top: 34px;
 }

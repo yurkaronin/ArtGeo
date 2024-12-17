@@ -5,4 +5,22 @@
   max-width: 100%;
   gap: 32px;
   align-items: center;
+  margin-top: 70px;
+  margin-bottom: 50px;
+
+  .title {
+    margin-bottom: 6px;
+  }
+
+  @media (max-width: 1380px) {
+    grid-template-columns: repeat(1, 1fr);
+    margin-bottom: 30px;
+    margin-top: 0;
+
+    &__image {
+      order: -1;
+      max-width: max-content;
+      margin: 0 auto;
+    }
+  }
 }

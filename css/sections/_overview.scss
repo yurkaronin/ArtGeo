@@ -1,15 +1,43 @@
 .overview {
   margin-bottom: 10px;
+
   &__grid {
     display: grid;
-    gap: 47px 160px;
-    grid-template-columns: 9fr 3fr;
+    gap: 160px 32px;
+    grid-template-columns: repeat(12, 1fr);
+  }
+  &__column--left {
+    grid-column: span 8;
+  }
+
+  &__column--right {
+    grid-column: 10/13;
+    margin-top: 16px;
+  }
+
+  .text-content {
+    margin-top: 53px;
   }
 
   @media (max-width: 1380px) {
     margin-bottom: 0;
     &__grid {
       grid-template-columns: 1fr;
+      gap: 60px;
+    }
+    &__column--left {
+      grid-column: initial;
+
+      .text {
+        margin-bottom: 27px;
+    }
+    }
+    &__column--right {
+      grid-column: initial;
+      margin-top: 0;
+    }
+    .text-content {
+      margin-top: 20px;
     }
   }
 

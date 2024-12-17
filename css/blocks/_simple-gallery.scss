@@ -18,4 +18,11 @@
   &__image {
     display: block;
   }
+
+  @media (max-width: 767px) {
+    &__list {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 16px;
+    }
+  }
 }
