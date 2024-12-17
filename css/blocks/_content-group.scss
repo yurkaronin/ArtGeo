@@ -1,0 +1,15 @@
+.content-group {
+  display: grid;
+  gap: 32px;
+  grid-template-columns: auto 1fr;
+  align-items: flex-start;
+  &:not(:last-of-type) {
+    margin-bottom: 40px;
+  }
+
+
+  img {
+    width: 96px;
+    display: block;
+  }
+}

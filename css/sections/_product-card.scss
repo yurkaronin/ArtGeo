@@ -1,0 +1,39 @@
+.product-card {
+  margin-top: 70px;
+  margin-bottom: 70px;
+  &__grid {
+    display: grid;
+    gap: 32px;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    margin-top: 55px;
+    margin-bottom: 50px;
+  }
+
+  &__photo {
+    img {
+      display: block;
+      width: 100%;
+      max-width: 100%;
+    }
+  }
+
+  &__desc {
+    margin: 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: var(--text);
+  }
+
+  .advantages__list {
+    display: grid;
+    gap: 40px;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.all-characteristics {
+  margin-top: 35px;
+  margin-bottom: 48px;
+}
+}

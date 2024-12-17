@@ -638,6 +638,17 @@ input[type=radio].visually-hidden {
   }
 }
 
+.subtitle {
+  display: block;
+  margin: 0;
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 133%;
+  color: var(--dark);
+  margin-bottom: 18px;
+}
+
 .main-navigation__list {
   display: flex;
   flex-wrap: wrap;
@@ -1505,13 +1516,39 @@ textarea {
 .simple-gallery__link {
   display: block;
   width: 100%;
-  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .simple-gallery__image {
-  height: 264px;
+  display: block;
+}
+
+.simple-gallery-three {
+  margin-top: 55px;
+  margin-bottom: 55px;
+}
+.simple-gallery-three__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 32px;
+  width: 100%;
+  max-width: 100%;
+  grid-template-columns: repeat(3, 1fr);
+  max-width: -moz-max-content;
+  max-width: max-content;
+  margin: 0 auto;
+}
+.simple-gallery-three__link {
+  display: block;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.simple-gallery-three__image {
   display: block;
 }
 
@@ -1529,7 +1566,6 @@ textarea {
   gap: 32px;
 }
 .simple-gallery-four__image {
-  height: 360px;
   display: block;
 }
 .simple-gallery-four figure {
@@ -1559,6 +1595,53 @@ textarea {
 .centered-block {
   display: flex;
   justify-content: center;
+}
+
+.content-group {
+  display: grid;
+  gap: 32px;
+  grid-template-columns: auto 1fr;
+  align-items: flex-start;
+}
+.content-group:not(:last-of-type) {
+  margin-bottom: 40px;
+}
+.content-group img {
+  width: 96px;
+  display: block;
+}
+
+.logos__list {
+  display: grid;
+  gap: 32px;
+  max-width: -moz-max-content;
+  max-width: max-content;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.photo-gallery {
+  margin-top: 48px;
+}
+.photo-gallery__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 0;
+  grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+}
+.photo-gallery__link {
+  display: block;
+  width: 100%;
+}
+.photo-gallery__link img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
 }
 
 .header {
@@ -1772,17 +1855,17 @@ textarea {
 }
 .section--black {
   background-color: #000;
-  color: #fff;
+  color: #b2b2b2;
   margin-top: 45px;
   margin-bottom: 45px;
   padding-top: 70px;
   padding-bottom: 70px;
 }
 .section--black .title {
-  color: inherit;
+  color: #fff;
 }
 .section--black a {
-  color: inherit;
+  color: #fff;
 }
 @media (max-width: 767px) {
   .section {
@@ -2176,6 +2259,83 @@ textarea {
   .why-us__grid {
     grid-template-columns: 1fr;
   }
+}
+
+.all-characteristics__group:not(:last-of-type) {
+  margin-bottom: 16px;
+}
+.all-characteristics__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.all-characteristics__item {
+  border-bottom: 1px solid var(--line);
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  color: var(--dark);
+  display: grid;
+  gap: 32px;
+  grid-template-columns: 3fr 5fr;
+  padding: 7px 0;
+  align-items: flex-start;
+}
+.all-characteristics__item:first-of-type {
+  border-top: 1px solid var(--line);
+}
+.all-characteristics__desc {
+  margin: 0;
+}
+.all-characteristics__name {
+  font-weight: 400;
+  color: var(--text);
+}
+.all-characteristics__footnote {
+  margin: 0;
+  margin-top: 24px;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--text);
+}
+
+.product-card {
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+.product-card__grid {
+  display: grid;
+  gap: 32px;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  margin-top: 55px;
+  margin-bottom: 50px;
+}
+.product-card__photo img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+}
+.product-card__desc {
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: var(--text);
+}
+.product-card .advantages__list {
+  display: grid;
+  gap: 40px;
+  grid-template-columns: repeat(2, 1fr);
+}
+.product-card .all-characteristics {
+  margin-top: 35px;
+  margin-bottom: 48px;
+}
+
+.applications-area__item:not(:last-of-type) {
+  margin-bottom: 55px;
 }
 
 .footer {

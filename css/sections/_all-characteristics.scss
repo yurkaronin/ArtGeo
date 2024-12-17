@@ -1,0 +1,49 @@
+.all-characteristics {
+  &__group {
+    &:not(:last-of-type) {
+      margin-bottom: 16px;
+    }
+  }
+
+  &__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  &__item {
+    border-bottom: 1px solid var(--line);
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--dark);
+    display: grid;
+    gap: 32px;
+    grid-template-columns: 3fr 5fr;
+    padding: 7px 0;
+    align-items: flex-start;
+
+    &:first-of-type {
+      border-top: 1px solid var(--line);
+    }
+
+  }
+
+  &__desc {
+    margin: 0;
+  }
+
+  &__name {
+    font-weight: 400;
+    color: var(--text);
+  }
+
+  &__footnote {
+    margin: 0;
+    margin-top: 24px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--text);
+  }
+}

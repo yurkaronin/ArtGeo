@@ -12,6 +12,7 @@
 @import "./blocks/container";
 @import "./blocks/grid-base";
 @import "./blocks/title";
+@import "./blocks/subtitle";
 @import "./blocks/main-navigation";
 @import "./blocks/link";
 @import "./blocks/button-menu";
@@ -35,9 +36,13 @@
 @import "./blocks/site-developers";
 @import "./blocks/map";
 @import "./blocks/simple-gallery";
+@import "./blocks/simple-gallery-three";
 @import "./blocks/simple-gallery-four";
 @import "./blocks/text-and-image";
 @import "./blocks/centered-block";
+@import "./blocks/content-group";
+@import "./blocks/logos";
+@import "./blocks/photo-gallery";
 
 // sections
 @import "./sections/header";
@@ -51,6 +56,10 @@
 @import "./sections/applications";
 @import "./sections/feedback";
 @import "./sections/why-us";
+@import "./sections/all-characteristics";
+@import "./sections/product-card";
+@import "./sections/applications-area";
+
 
 @import "./sections/footer";
 @import "./sections/modal";
