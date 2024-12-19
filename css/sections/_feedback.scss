@@ -11,9 +11,14 @@
     transition: all 0.3s;
     img {
       display: block;
+      transition: all 0.3s;
     }
     &:hover {
       box-shadow: 2px 2px 12px 0 rgba(0, 0, 0, 0.2);
+
+      img {
+        scale: 1.05;
+      }
     }
   }
 

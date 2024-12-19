@@ -2524,10 +2524,15 @@ textarea {
 }
 .feedback__image img {
   display: block;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 .feedback__image:hover {
   -webkit-box-shadow: 2px 2px 12px 0 rgba(0, 0, 0, 0.2);
           box-shadow: 2px 2px 12px 0 rgba(0, 0, 0, 0.2);
+}
+.feedback__image:hover img {
+  scale: 1.05;
 }
 @media (max-width: 1279px) {
   .feedback__grid {
